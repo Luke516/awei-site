@@ -51,7 +51,7 @@ const locations: Location[] = [
 ];
 
 export const RegionGuideSectionGold: React.FC = () => {
-  const [selectedId, setSelectedId] = useState<number>(locations[0].id);
+  const [selectedId, _] = useState<number>(locations[0].id);
 
   const selectedLocation =
     locations.find((loc) => loc.id === selectedId) || locations[0];

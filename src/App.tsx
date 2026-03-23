@@ -1,5 +1,5 @@
-import React from "react";
-import { FloatingAction } from "./components/FloatingAction";
+// import React from "react";
+// import { FloatingAction } from "./components/FloatingAction";
 import { NavBar } from "./components/NavBar";
 // import { HeroSection } from './components/HeroSection';
 import { HeroSection2 } from "./components/HeroSection2";
