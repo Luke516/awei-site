@@ -1,7 +1,8 @@
 import React from 'react';
 import { FloatingAction } from './components/FloatingAction';
 import { NavBar } from './components/NavBar';
-import { HeroSection } from './components/HeroSection';
+// import { HeroSection } from './components/HeroSection';
+import { HeroSection2 } from './components/HeroSection2';
 import { ServicesSection } from './components/ServicesSection';
 import { RegionGuideSection } from './components/RegionGuideSection';
 import { PostSection } from './components/PostSection';
@@ -12,7 +13,8 @@ function App() {
     <div className="min-h-screen flex flex-col bg-cream font-sans-tc">
       <NavBar />
       <main className="flex-grow w-full relative">
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <HeroSection2 />
         <ServicesSection />
         <RegionGuideSection />
         <PostSection />

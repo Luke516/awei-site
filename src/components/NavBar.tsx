@@ -2,21 +2,21 @@ import React from 'react';
 
 export const NavBar: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 bg-cream border-b border-gold/20 shadow-sm">
+    <header className="absolute top-0 w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <a href="#">
-            <img src="/images/logo.png" alt="黃阿偉 Logo" className="h-10 w-auto" />
+            <img src="/images/logo.png" alt="黃阿偉 Logo" className="h-10 w-auto drop-shadow-md" />
           </a>
         </div>
 
         {/* Right: Navigation Links */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-medium text-charcoal hover:text-navy transition-colors">Home</a>
-          <a href="#" className="text-sm font-medium text-charcoal hover:text-navy transition-colors">專任委託服務</a>
-          <a href="#" className="text-sm font-medium text-charcoal hover:text-navy transition-colors">成交案例</a>
-          <a href="#" className="text-sm font-medium text-navy border border-navy px-4 py-2 hover:bg-navy hover:text-white transition-colors">聯絡我</a>
+          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm">Home</a>
+          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm">專任委託服務</a>
+          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm">成交案例</a>
+          <a href="#" className="text-sm font-medium text-navy border border-navy px-4 py-2 hover:bg-navy hover:text-white transition-colors bg-white/50 backdrop-blur-sm">聯絡我</a>
         </nav>
 
         {/* Mobile menu button (placeholder) */}
