@@ -3,13 +3,12 @@ import { ParallelogramBlock } from "./ParallelogramBlock";
 
 export const HeroSection2: React.FC = () => {
   return (
-    <section className="relative w-full h-[85vh] min-h-[700px] flex items-center bg-[#F8F6F0] overflow-hidden pt-20">
+    <section className="relative w-full min-h-screen flex items-center bg-[#F8F6F0] overflow-hidden pt-20 pb-0">
       {/* 1. Background Pattern / Subtle Base */}
       <div
-        className="absolute inset-0 bg-cover bg-center z-0 opacity-10"
+        className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
         style={{ backgroundImage: 'url("/images/landing-bg-large.jpg")' }}
       ></div>
-
       {/* Grid Pattern overlay (optional to match reference abstract lines) */}
       <div
         className="absolute inset-0 z-0 opacity-20"
@@ -32,7 +31,7 @@ export const HeroSection2: React.FC = () => {
 
         {/* Block 2: Middle Solid Color (Brand Gold) */}
         <ParallelogramBlock
-          bgColor="bg-gold" // Using the elegant gold from DESIGN_GUIDE.md
+          bgColor="bg-gold"
           className="w-[280px] h-[110%] right-[10%] -top-[10%] shadow-2xl z-20"
         >
           {/* Vertical Text inside the block */}
@@ -45,7 +44,7 @@ export const HeroSection2: React.FC = () => {
 
         {/* Block 3: Left building image (Smaller) */}
         <ParallelogramBlock
-          imgSrc="/images/15-dc3ab990-5b3d-4268-ba3a-e3dcceff3424.png" // using another building image for variety
+          imgSrc="/images/15-dc3ab990-5b3d-4268-ba3a-e3dcceff3424.png"
           className="w-[260px] h-[70%] right-[32%] top-[15%] opacity-100 z-10"
         />
       </div>
@@ -53,7 +52,7 @@ export const HeroSection2: React.FC = () => {
       {/* 3. Foreground Content */}
       <div className="relative z-30 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between h-full">
         {/* Left Column: Text Block */}
-        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 md:pt-0">
+        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 md:pt-0 pb-32">
           <div className="mb-6 animate-fade-in-up">
             <h3 className="text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -78,9 +77,9 @@ export const HeroSection2: React.FC = () => {
             <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-[2px] h-[80%] bg-gold/50 hidden md:block"></div>
           </div>
 
-          <div className="mb-10 animate-fade-in-up delay-200">
-            <p className="text-gold font-en-serif italic tracking-widest text-sm md:text-lg">
-              Your Vision. Our Expertise.
+          <div className="mb-8 animate-fade-in-up delay-200">
+            <p className="text-navy font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
+              深耕內湖多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。
             </p>
           </div>
 
@@ -125,15 +124,50 @@ export const HeroSection2: React.FC = () => {
               </span>
             </div>
           </div>
+
+          <div className="mt-8 animate-fade-in-up delay-200">
+            <p className="text-gold font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
+              Your Vision. Our Expertise.
+            </p>
+          </div>
         </div>
 
         {/* Right Column: Portrait */}
-        <div className="w-full md:w-[50%] h-full flex items-end justify-center md:justify-end relative mt-10 md:mt-0 animate-fade-in-up delay-400">
+        <div className="absolute right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] flex items-end justify-center md:justify-end z-40 animate-fade-in-up delay-400">
           <img
             src="/images/awei-portrait.png"
             alt="黃阿偉 Portrait"
-            className="h-[85%] md:h-[95%] max-h-[800px] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] z-40 relative pointer-events-none"
+            className="h-full object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none"
           />
+        </div>
+      </div>
+
+      {/* Bottom Dark Bar with Custom User Styled Skew Elements */}
+      <div className="absolute bottom-0 left-0 w-full z-50">
+        {/* User's custom skewed info box */}
+        <div
+          className="absolute bottom-8 min-h-15 left-[-10%] w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
+          style={{ transform: "skewX(30deg)" }}
+        >
+          <div
+            className="text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-4"
+            style={{ transform: "skewX(-30deg)" }}
+          >
+            專營項目
+          </div>
+          <div
+            className="text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg p-0 m-0"
+            style={{ transform: "skewX(-30deg)" }}
+          >
+            店面•商辦•豪宅•廠房
+          </div>
+        </div>
+
+        {/* The thin bottom bar */}
+        <div className="w-full h-8 bg-navy flex items-center justify-end px-6 lg:px-12 relative z-50">
+          <div className="text-gold font-sans-tc font-medium tracking-[0.2em] text-sm md:text-base hidden">
+            專營：店面 / 商辦 / 豪宅 / 廠房
+          </div>
         </div>
       </div>
     </section>
