@@ -1,12 +1,13 @@
-import React from 'react';
-import { FloatingAction } from './components/FloatingAction';
-import { NavBar } from './components/NavBar';
+import React from "react";
+import { FloatingAction } from "./components/FloatingAction";
+import { NavBar } from "./components/NavBar";
 // import { HeroSection } from './components/HeroSection';
-import { HeroSection2 } from './components/HeroSection2';
-import { ServicesSection } from './components/ServicesSection';
-import { RegionGuideSection } from './components/RegionGuideSection';
-import { PostSection } from './components/PostSection';
-import { Footer } from './components/Footer';
+import { HeroSection2 } from "./components/HeroSection2";
+import { StatsSection } from "./components/StatsSection";
+import { ServicesSection } from "./components/ServicesSection";
+import { RegionGuideSection } from "./components/RegionGuideSection";
+import { PostSection } from "./components/PostSection";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
       <main className="flex-grow w-full relative">
         {/* <HeroSection /> */}
         <HeroSection2 />
+        <StatsSection />
         <ServicesSection />
         <RegionGuideSection />
         <PostSection />
       </main>
       <Footer />
-      <FloatingAction />
+      {/* <FloatingAction /> */}
     </div>
   );
 }

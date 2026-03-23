@@ -19,7 +19,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
 }) => {
   return (
     <div
-      className={`absolute shadow-xl ${className}`}
+      className={className}
       style={{
         // Using skew to perfectly match the reference image's true parallelogram shape
         transform: "skewX(-18deg)",

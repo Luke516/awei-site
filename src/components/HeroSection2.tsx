@@ -3,7 +3,7 @@ import { ParallelogramBlock } from "./ParallelogramBlock";
 
 export const HeroSection2: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-[#F8F6F0] overflow-hidden pt-20 pb-0">
+    <section className="relative w-full min-h-screen flex bg-[#F8F6F0] overflow-hidden pt-20 pb-0">
       {/* 1. Background Pattern / Subtle Base */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
@@ -22,35 +22,39 @@ export const HeroSection2: React.FC = () => {
       ></div>
 
       {/* 2. Parallelogram Decorative Elements (Right Side Background) */}
-      <div className="absolute right-0 top-0 w-full md:w-2/3 lg:w-1/2 h-full z-10 hidden lg:block">
+      <div className="absolute left-[10vw] top-0 w-[88vw] lg:min-w-[1150px] max-w-[2080px] h-full z-10 hidden md:flex flex-row items-end justify-end gap-4">
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrc="/images/landing-bg-large.jpg"
-          className="w-[320px] h-[85%] -right-[10%] top-[5%] opacity-90 z-10"
+          // className="relative w-[320px] h-[85%] -right-[10%] top-[5%] opacity-90 z-10"
+          className="relative w-[14vw] h-[75%] mb-12 hidden lg:flex"
         />
 
         {/* Block 2: Middle Solid Color (Brand Gold) */}
         <ParallelogramBlock
           bgColor="bg-gold"
-          className="w-[280px] h-[110%] right-[10%] -top-[10%] shadow-2xl z-20"
+          // className="relative w-[280px] h-[110%] right-[10%] top-[10%] shadow-2xl z-20"
+          className="relative w-[20vw] min-w-[360px] h-[90%]"
         >
           {/* Vertical Text inside the block */}
-          <div className="absolute right-8 top-1/2 -translate-y-1/2 origin-center -rotate-90">
+          {/* <div className="absolute right-8 top-1/2 -translate-y-1/2 origin-center -rotate-90">
             <span className="text-white font-en-sans font-bold tracking-[0.4em] text-sm uppercase whitespace-nowrap drop-shadow-md">
               Patrick Huang
             </span>
-          </div>
+          </div> */}
         </ParallelogramBlock>
 
         {/* Block 3: Left building image (Smaller) */}
         <ParallelogramBlock
-          imgSrc="/images/15-dc3ab990-5b3d-4268-ba3a-e3dcceff3424.png"
-          className="w-[260px] h-[70%] right-[32%] top-[15%] opacity-100 z-10"
+          // imgSrc="/images/15-dc3ab990-5b3d-4268-ba3a-e3dcceff3424.png"
+          bgColor="bg-navy/30"
+          // className="relative w-[260px] h-[70%] right-[32%] top-[15%] opacity-100 z-10"
+          className="relative w-[16vw] h-[80%] mb-20 hidden lg:flex"
         />
       </div>
 
       {/* 3. Foreground Content */}
-      <div className="relative z-30 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between h-full">
+      <div className="relative z-30 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between flex-1">
         {/* Left Column: Text Block */}
         <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 md:pt-0 pb-32">
           <div className="mb-6 animate-fade-in-up">
@@ -133,7 +137,7 @@ export const HeroSection2: React.FC = () => {
         </div>
 
         {/* Right Column: Portrait */}
-        <div className="absolute right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] flex items-end justify-center md:justify-end z-40 animate-fade-in-up delay-400">
+        <div className="absolute right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-h-[900px] flex items-end justify-center md:justify-end z-40 animate-fade-in-up delay-400">
           <img
             src="/images/awei-portrait.png"
             alt="黃阿偉 Portrait"
