@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { SectionHeader } from './SectionHeader';
+import React, { useState } from "react";
+import { SectionHeader } from "./SectionHeader";
 
 export const ServicesSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -7,72 +7,221 @@ export const ServicesSection: React.FC = () => {
   const tabs = [
     {
       id: 0,
-      label: '專業堅持',
-      title: '專任委託服務計畫',
-      description: '一般委託最常見的問題是：不同仲介互相砍價、資訊混亂，最後守不住你的價格。專任委託能確保阿偉作為您的唯一對外窗口，守護您的價格門檻，並讓阿偉投入 100% 的行銷資源，將您的物件打造成市場上的唯一焦點。',
+      label: "專業堅持",
+      title: "專任委託服務計畫",
+      description:
+        "一般委託最常見的問題是：不同仲介互相砍價、資訊混亂，最後守不住你的價格。專任委託能確保阿偉作為您的唯一對外窗口，守護您的價格門檻，並讓阿偉投入 100% 的行銷資源，將您的物件打造成市場上的唯一焦點。",
+      image:
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
       id: 1,
-      label: '深耕內湖',
-      title: '在地專家 精準眼光',
-      description: '深耕內湖、南港區多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。',
+      label: "深耕內湖",
+      title: "在地專家 精準眼光",
+      description:
+        "深耕內湖、南港區多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。",
+      image:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
       id: 2,
-      label: '地產知識',
-      title: '買賣知識與法規解析',
-      description: '買賣房屋涉及繁雜的流程與稅務問題。我們提供完整的地產知識分享，從履約保證、稅務規劃到合約審閱，全程為您的交易安全把關。',
-    }
+      label: "地產知識",
+      title: "買賣知識與法規解析",
+      description:
+        "買賣房屋涉及繁雜的流程與稅務問題。我們提供完整的地產知識分享，從履約保證、稅務規劃到合約審閱，全程為您的交易安全把關。",
+      image:
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
   ];
 
+  const nextTab = () => setActiveTab((prev) => (prev + 1) % tabs.length);
+  const prevTab = () =>
+    setActiveTab((prev) => (prev - 1 + tabs.length) % tabs.length);
+
   return (
-    <section className="py-20 bg-cream px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        <SectionHeader 
+    <section className="py-20 bg-cream relative overflow-hidden">
+      {/* Pattern Overlay */}
+      <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-20 mb-8 lg:mb-12">
+        <SectionHeader
           eyebrow="OUR SERVICES"
-          title="為您打造專屬的房產服務"
+          title="服務特色"
+          subtitle="在房地產領域的多年經驗，讓阿偉能為您提供最專業的服務"
           centered={true}
         />
+      </div>
 
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex border-b border-gold/20">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-4 text-sm md:text-base font-bold tracking-widest transition-colors ${
-                  activeTab === tab.id 
-                    ? 'text-navy border-b-2 border-navy' 
-                    : 'text-muted hover:text-navy'
-                }`}
-              >
-                {tab.label}
+      {/* Mobile Layout (< lg) */}
+      <div className="lg:hidden max-w-7xl mx-auto px-6 relative z-10">
+        <div className="bg-white shadow-sm border border-gold/10 flex flex-col overflow-hidden">
+          {/* Image */}
+          <div className="w-full h-64 relative bg-gray-200">
+            <div
+              className="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-500"
+              style={{
+                backgroundImage: `url(${tabs[activeTab].image})`,
+              }}
+            />
+            {/* Gradient Mask Overlay to blend with text section below */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          </div>
+
+          {/* Text Content and Tabs */}
+          <div className="w-full p-6 flex flex-col z-10 bg-white relative -mt-8">
+            {/* Tab Navigation */}
+            <div className="flex mb-6 border-b border-gold/20 overflow-x-auto whitespace-nowrap scrollbar-hide">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`px-4 py-3 text-sm font-bold tracking-widest transition-colors ${
+                    activeTab === tab.id
+                      ? "text-navy border-b-2 border-navy"
+                      : "text-muted hover:text-navy"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Tab Content */}
+            <div className="flex flex-col items-start text-left min-h-[200px]">
+              <h3 className="text-xl font-serif-tc text-navy font-bold tracking-widest mb-4">
+                {tabs[activeTab].title}
+              </h3>
+              <p className="text-muted tracking-widest leading-relaxed text-sm mb-6">
+                {tabs[activeTab].description}
+              </p>
+              <button className="mt-auto bg-navy text-white px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors">
+                {tabs[activeTab].id === 0
+                  ? "了解更多"
+                  : tabs[activeTab].id === 1
+                  ? "觀看成交實例"
+                  : "地產資訊"}
               </button>
-            ))}
+            </div>
           </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout (>= lg) */}
+      <div className="hidden lg:flex relative w-full h-[550px] items-center justify-center z-10">
+        {/* Left Toggle Button */}
+        <button
+          onClick={prevTab}
+          className="absolute left-8 xl:left-16 z-30 w-14 h-14 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-lg hover:bg-white text-navy transition-all hover:scale-110 border border-gold/20"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        {/* Carousel Track */}
+        <div className="relative w-full max-w-7xl h-full flex items-center justify-center">
+          {tabs.map((tab, index) => {
+            const isActive = index === activeTab;
+            const isPrev =
+              index === (activeTab - 1 + tabs.length) % tabs.length;
+            const isNext = index === (activeTab + 1) % tabs.length;
+
+            let translate = "translate-x-0";
+            let scale = "scale-100";
+            let zIndex = "z-20";
+            let opacity = "opacity-100";
+            let mask = "none";
+            let pointerEvents = "pointer-events-auto";
+
+            if (isPrev) {
+              translate = "-translate-x-[70%] xl:-translate-x-[80%]";
+              scale = "scale-[0.85]";
+              zIndex = "z-10";
+              opacity = "opacity-30";
+              // Fade out the left edge of the prev card
+              mask =
+                "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%)";
+              pointerEvents = "pointer-events-none";
+            } else if (isNext) {
+              translate = "translate-x-[70%] xl:translate-x-[80%]";
+              scale = "scale-[0.85]";
+              zIndex = "z-10";
+              opacity = "opacity-30";
+              // Fade out the right edge of the next card
+              mask =
+                "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%)";
+              pointerEvents = "pointer-events-none";
+            } else if (!isActive) {
+              opacity = "opacity-0";
+              pointerEvents = "pointer-events-none";
+            }
+
+            return (
+              <div
+                key={tab.id}
+                className={`absolute w-full max-w-5xl transition-all duration-700 ease-in-out ${translate} ${scale} ${zIndex} ${opacity} ${pointerEvents}`}
+                style={{ WebkitMaskImage: mask, maskImage: mask }}
+              >
+                <div className="bg-white shadow-2xl border border-gold/10 flex min-h-[450px] overflow-hidden">
+                  {/* Image Area */}
+                  <div className="w-[45%] relative bg-gray-200">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${tab.image})` }}
+                    />
+                  </div>
+                  {/* Text Content Area */}
+                  <div className="w-[55%] p-10 xl:p-14 flex flex-col items-start text-left bg-white relative">
+                    <div className="text-gold font-bold tracking-widest text-sm mb-4 border-b border-gold/30 pb-2">
+                      {tab.label}
+                    </div>
+                    <h3 className="text-2xl xl:text-3xl font-serif-tc text-navy font-bold tracking-widest mb-6 leading-relaxed">
+                      {tab.title}
+                    </h3>
+                    <p className="text-muted tracking-widest leading-relaxed text-sm xl:text-base mb-8">
+                      {tab.description}
+                    </p>
+                    <button className="mt-auto bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors shadow-md">
+                      {tab.id === 0
+                        ? "了解更多"
+                        : tab.id === 1
+                        ? "觀看成交實例"
+                        : "地產資訊"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        {/* Tab Content Panel */}
-        <div className="bg-white p-8 md:p-12 shadow-sm border border-gold/10 flex flex-col md:flex-row gap-8 items-center min-h-[400px]">
-          {/* Image Placeholder */}
-          <div className="w-full md:w-1/2 h-64 md:h-80 bg-gray-200 flex items-center justify-center text-muted">
-            [ Placeholder Image for {tabs[activeTab].label} ]
-          </div>
-          
-          {/* Text Content */}
-          <div className="w-full md:w-1/2 flex flex-col items-start text-left">
-            <h3 className="text-2xl md:text-3xl font-serif-tc text-navy font-bold tracking-widest mb-6">
-              {tabs[activeTab].title}
-            </h3>
-            <p className="text-muted tracking-widest leading-relaxed text-sm md:text-base mb-8">
-              {tabs[activeTab].description}
-            </p>
-            <button className="bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors">
-              了解更多
-            </button>
-          </div>
-        </div>
+        {/* Right Toggle Button */}
+        <button
+          onClick={nextTab}
+          className="absolute right-8 xl:right-16 z-30 w-14 h-14 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-lg hover:bg-white text-navy transition-all hover:scale-110 border border-gold/20"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
       </div>
     </section>
   );

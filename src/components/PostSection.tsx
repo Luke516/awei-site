@@ -48,8 +48,11 @@ export const PostSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-cream px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-cream px-6 lg:px-12 relative">
+      {/* Pattern Overlay */}
+      <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeader 
           eyebrow="LATEST INSIGHTS"
           title="房產知識與最新動態"

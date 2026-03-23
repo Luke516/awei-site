@@ -3,8 +3,11 @@ import { SectionHeader } from './SectionHeader';
 
 export const StatsSection: React.FC = () => {
   return (
-    <section className="bg-navy py-20 px-6 lg:px-12 border-t border-gold/20">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-navy py-20 px-6 lg:px-12 border-t border-gold/20 relative">
+      {/* Pattern Overlay */}
+      <div className="absolute inset-0 bg-pattern-dark pointer-events-none opacity-50"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         
         <SectionHeader 
           eyebrow="PERFORMANCE"

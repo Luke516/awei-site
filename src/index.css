@@ -42,6 +42,16 @@
     transform: translateY(20px);
   }
 
+  .bg-pattern-light {
+    background-image: radial-gradient(rgba(197, 165, 114, 0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .bg-pattern-dark {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }

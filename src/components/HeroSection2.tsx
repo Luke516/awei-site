@@ -91,7 +91,7 @@ export const HeroSection2: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
             {/* Call to Action Button */}
             <button className="bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer">
-              立即預約看屋
+              立即預約
               <svg
                 className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                 fill="none"
