@@ -1,9 +1,10 @@
 import React from "react";
 import { ParallelogramBlock } from "./ParallelogramBlock";
+import { DotPattern } from "./ui/dot-pattern";
 
 export const HeroSection2: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex bg-[#F8F6F0] overflow-hidden pt-20 pb-0">
+    <section className="relative w-full lg:min-h-screen flex bg-[#F8F6F0] overflow-hidden pt-20 pb-0">
       {/* 1. Background Pattern / Subtle Base */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
@@ -14,7 +15,7 @@ export const HeroSection2: React.FC = () => {
         className="absolute inset-0 z-0 opacity-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)",
+            "linear-gradient(rgba(9, 8, 8, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
           transform:
             "perspective(500px) rotateX(60deg) scale(2) translateY(-100px)",
@@ -22,41 +23,56 @@ export const HeroSection2: React.FC = () => {
       ></div>
 
       {/* 2. Parallelogram Decorative Elements (Right Side Background) */}
-      <div className="absolute left-[10vw] top-0 w-[88vw] lg:min-w-[1150px] max-w-[2080px] h-full z-10 hidden md:flex flex-row items-end justify-end gap-4">
+      <div className="absolute left-[10vw] top-0 w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 hidden md:flex flex-row items-end justify-end gap-6">
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
-          imgSrc="/images/landing-bg-large.jpg"
-          // className="relative w-[320px] h-[85%] -right-[10%] top-[5%] opacity-90 z-10"
-          className="relative w-[14vw] h-[75%] mb-12 hidden lg:flex"
+          imgSrcs={[
+            // "/images/hero-picture-1.jpg",
+            "/images/hero-picture-4.jpg",
+            // "/images/hero-picture-5.jpg",
+          ]}
+          slideFrom="bottom"
+          className="relative w-[14vw] h-[75%] max-w-[320px] mb-12 hidden lg:flex"
         />
 
         {/* Block 2: Middle Solid Color (Brand Gold) */}
         <ParallelogramBlock
-          bgColor="bg-gold"
+          imgSrc="/images/landing-bg-large.jpg"
+          bgColor="bg-gradient-to-b from-gray-100 to-gold"
           // className="relative w-[280px] h-[110%] right-[10%] top-[10%] shadow-2xl z-20"
           className="relative w-[20vw] min-w-[360px] h-[90%]"
         >
           {/* Vertical Text inside the block */}
-          {/* <div className="absolute right-8 top-1/2 -translate-y-1/2 origin-center -rotate-90">
-            <span className="text-white font-en-sans font-bold tracking-[0.4em] text-sm uppercase whitespace-nowrap drop-shadow-md">
-              Patrick Huang
-            </span>
-          </div> */}
+
+          <p className="absolute top-4 left-[32%] lg:left-[40%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg uppercase whitespace-nowrap drop-shadow-md">
+            Patrick Huang
+          </p>
+          <DotPattern
+            className="absolute inset-0 opacity-50 transform-[skewX(-18deg)] bg-gold/40"
+            style={{
+              color: "rgba(0,0,0,0.3)",
+            }}
+          ></DotPattern>
         </ParallelogramBlock>
 
         {/* Block 3: Left building image (Smaller) */}
         <ParallelogramBlock
-          // imgSrc="/images/15-dc3ab990-5b3d-4268-ba3a-e3dcceff3424.png"
-          bgColor="bg-navy/30"
-          // className="relative w-[260px] h-[70%] right-[32%] top-[15%] opacity-100 z-10"
-          className="relative w-[16vw] h-[80%] mb-20 hidden lg:flex"
+          imgSrcs={[
+            // "/images/hero-picture-2.jpg",
+            // "/images/hero-picture-3.jpg",
+            // "/images/hero-picture-6.jpg",
+            "/images/hero-picture-8.png",
+          ]}
+          slideFrom="top"
+          bgColor="bg-navy/40"
+          className="relative w-[16vw] h-[80%] mb-15 ml-2 hidden lg:flex"
         />
       </div>
 
       {/* 3. Foreground Content */}
-      <div className="relative z-30 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between flex-1">
+      <div className="relative z-30 w-full max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 md:pt-0 pb-32">
+        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-6">
           <div className="mb-6 animate-fade-in-up">
             <h3 className="text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -67,13 +83,13 @@ export const HeroSection2: React.FC = () => {
           </div>
 
           <div className="mb-8 relative animate-fade-in-up delay-100">
-            <h4 className="text-muted font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
+            <h4 className="text-gray-600 font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
               P R O J E C T &nbsp; M A N A G E R
             </h4>
             <h1 className="font-serif-tc font-black text-5xl md:text-7xl tracking-widest mb-4 text-navy">
               黃阿偉
             </h1>
-            <p className="text-muted font-sans-tc text-sm md:text-base tracking-widest">
+            <p className="text-gray-400 font-sans-tc text-sm md:text-base tracking-widest">
               內湖五期店 專案經理
             </p>
 
@@ -81,14 +97,14 @@ export const HeroSection2: React.FC = () => {
             <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-[2px] h-[80%] bg-gold/50 hidden md:block"></div>
           </div>
 
-          <div className="mb-8 animate-fade-in-up delay-200">
+          <div className="mb-8 animate-fade-in-up delay-200 max-w-md hidden lg:block">
             <p className="text-navy font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
               深耕內湖多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。
             </p>
           </div>
 
           {/* CTA & Contact Section */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
             {/* Call to Action Button */}
             <button className="bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer">
               立即預約
@@ -137,11 +153,11 @@ export const HeroSection2: React.FC = () => {
         </div>
 
         {/* Right Column: Portrait */}
-        <div className="absolute right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-h-[900px] flex items-end justify-center md:justify-end z-40 animate-fade-in-up delay-400">
+        <div className="absolute right-0 md:right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-w-[50vw] max-h-[500px] md:max-h-[900px] flex items-end justify-end z-40 animate-fade-in-up delay-400">
           <img
             src="/images/awei-portrait.png"
             alt="黃阿偉 Portrait"
-            className="h-full object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none"
+            className="h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none"
           />
         </div>
       </div>
@@ -150,7 +166,7 @@ export const HeroSection2: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full z-50">
         {/* User's custom skewed info box */}
         <div
-          className="absolute bottom-8 min-h-15 left-[-10%] w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
+          className="absolute bottom-8 min-h-15 left-[-5%] w-[360px] md:w-[480px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
           style={{ transform: "skewX(30deg)" }}
         >
           <div

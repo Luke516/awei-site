@@ -10,7 +10,7 @@ export const NavBar: React.FC = () => {
             <img
               src="/images/logo.png"
               alt="黃阿偉 Logo"
-              className="h-16 w-auto drop-shadow-md"
+              className="h-16 w-auto drop-shadow-md block md:block"
             />
           </a>
         </div>
