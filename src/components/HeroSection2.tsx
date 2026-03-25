@@ -44,7 +44,7 @@ export const HeroSection2: React.FC = () => {
         >
           {/* Vertical Text inside the block */}
 
-          <p className="absolute top-4 left-[42%] lg:left-[50%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
+          <p className="absolute top-4 left-[42%] lg:left-[48%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
             Patrick Huang
           </p>
           <DotPattern
@@ -166,7 +166,7 @@ export const HeroSection2: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full z-50">
         {/* User's custom skewed info box */}
         <div
-          className="absolute bottom-8 min-h-15 left-[-5%] w-[360px] md:w-[480px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
+          className="absolute bottom-8 min-h-15 left-[-5%] w-[400px] md:w-[480px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
           style={{ transform: "skewX(30deg)" }}
         >
           <div

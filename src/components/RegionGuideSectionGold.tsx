@@ -8,50 +8,102 @@ interface Location {
   y: number; // percentage
   info: string;
   videoId?: string; // YouTube video ID
+  content?: React.ReactNode;
 }
 
 const locations: Location[] = [
   {
     id: 1,
-    label: "內湖科技園區",
-    x: 40,
-    y: 30,
-    info: "匯聚眾多知名科技企業，就業人口帶動周邊住宅強勁需求，是內湖房市的重點熱區。",
+    label: "西湖生活圈",
+    x: 21.77,
+    y: 14.2,
+    info: "西湖生活圈是內湖區的核心生活圈，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的生活圈之一。",
     videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
   },
   {
     id: 2,
-    label: "內湖五期重劃區",
-    x: 60,
-    y: 55,
-    info: "街廓整齊、綠覆率高，採「住商分離」規劃。擁有極佳的生活品質，深受企業主及高階主管青睞。",
-    videoId: "LXb3EKWsInQ",
+    label: "文德港墘生活圈",
+    x: 37.6,
+    y: 35.6,
+    info: "文德港墘生活圈是內湖區的核心生活圈，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的生活圈之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
   },
   {
     id: 3,
-    label: "南港軟體園區",
-    x: 80,
-    y: 70,
-    info: "三鐵共構交通優勢，加上大型商場進駐，發展潛力無窮，近年來房價屢創新高。",
+    label: "內湖捷運站",
+    x: 52.15,
+    y: 21.15,
+    info: "內湖捷運站是內湖區的核心交通樞紐，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的交通樞紐之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
   },
   {
     id: 4,
     label: "大湖公園",
-    x: 35,
-    y: 15,
-    info: "依山傍水，環境清幽。周邊多為高級住宅與別墅區，是重視休閒生活品質的首選。",
+    x: 64.15,
+    y: 12.1,
+    info: "內湖科學園區是內湖區的核心科技園區，擁有豐富的科技企業與完善的交通網絡，是內湖區最受歡迎的科技園區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
   },
   {
     id: 5,
-    label: "四期重劃區",
-    x: 50,
-    y: 45,
-    info: "鄰近三軍總醫院及內湖行政中心，生活機能發展成熟，商圈完善。",
+    label: "第八期重劃區",
+    x: 88.25,
+    y: 30.3,
+    info: "內湖五期重劃區是內湖區的核心重劃區，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的重劃區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 6,
+    label: "內湖科技園區",
+    x: 27.85,
+    y: 47.4,
+    info: "內湖科技園區是內湖區的核心科技園區，擁有豐富的科技企業與完善的交通網絡，是內湖區最受歡迎的科技園區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 7,
+    label: "葫洲第二期重劃區",
+    x: 75.8,
+    y: 40.4,
+    info: "內湖科技園區是內湖區的核心科技園區，擁有豐富的科技企業與完善的交通網絡，是內湖區最受歡迎的科技園區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 8,
+    label: "東湖第一期重劃區",
+    x: 87.44,
+    y: 50.5,
+    info: "東湖第一期重劃區是內湖區的核心重劃區，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的重劃區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 9,
+    label: "第五期重劃區",
+    x: 35.3,
+    y: 73.7,
+    info: "第五期重劃區是內湖區的核心重劃區，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的重劃區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 10,
+    label: "第四期重劃區",
+    x: 53.7,
+    y: 60.4,
+    info: "第四期重劃區是內湖區的核心重劃區，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的重劃區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
+  },
+  {
+    id: 11,
+    label: "葫洲第三期重劃區",
+    x: 69.3,
+    y: 57.6,
+    info: "葫洲第三期重劃區是內湖區的核心重劃區，擁有豐富的商業機能與完善的交通網絡，是內湖區最受歡迎的重劃區之一。",
+    videoId: "dQw4w9WgXcQ", // Placeholder YouTube ID
   },
 ];
 
 export const RegionGuideSectionGold: React.FC = () => {
-  const [selectedId, _] = useState<number>(locations[0].id);
+  const [selectedId, setSelectedId] = useState<number>(locations[0].id);
 
   const selectedLocation =
     locations.find((loc) => loc.id === selectedId) || locations[0];
@@ -91,25 +143,13 @@ export const RegionGuideSectionGold: React.FC = () => {
               />
 
               {/* Overlay Dots */}
-              {/* {locations.map((loc) => (
+              {locations.map((loc) => (
                 <button
                   key={loc.id}
                   onClick={() => setSelectedId(loc.id)}
                   className={`absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all`}
                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                 >
-                  <div className="relative">
-                    {selectedId === loc.id && (
-                      <div className="absolute inset-0 rounded-full bg-gold animate-ping opacity-75"></div>
-                    )}
-                    <div
-                      className={`relative w-6 h-6 md:w-8 md:h-8 rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
-                        selectedId === loc.id
-                          ? "bg-gold scale-110"
-                          : "bg-navy hover:bg-gold/80 hover:scale-110"
-                      }`}
-                    />
-                  </div>
                   <div
                     className={`mt-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg border border-gold/20 rounded-sm transition-opacity duration-300 ${
                       selectedId === loc.id
@@ -119,8 +159,27 @@ export const RegionGuideSectionGold: React.FC = () => {
                   >
                     {loc.label}
                   </div>
+                  <div className="relative w-17 h-17">
+                    {selectedId === loc.id && (
+                      <div className="absolute inset-0 w-17 h-17 rounded-full border-white animate-ping opacity-75"></div>
+                    )}
+                    <div
+                      className={`relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
+                        selectedId === loc.id
+                          ? "bg-navy scale-110"
+                          : "bg-gold hover:bg-white hover:scale-110"
+                      }`}
+                    ></div>
+                    <div
+                      className={`absolute inset-0 flex items-center justify-center ${
+                        selectedId === loc.id ? "text-white" : "text-white"
+                      } text-xs p-2`}
+                    >
+                      {loc.label}
+                    </div>
+                  </div>
                 </button>
-              ))} */}
+              ))}
             </div>
           </div>
 
