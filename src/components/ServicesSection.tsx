@@ -11,17 +11,31 @@ export const ServicesSection: React.FC = () => {
       title: "專任委託服務計畫",
       description:
         "一般委託最常見的問題是：不同仲介互相砍價、資訊混亂，最後守不住你的價格。專任委託能確保阿偉作為您的唯一對外窗口，守護您的價格門檻，並讓阿偉投入 100% 的行銷資源，將您的物件打造成市場上的唯一焦點。",
-      image:
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "/images/personal-picture-1.png",
+      primaryAction: {
+        label: "了解更多",
+        href: "/#",
+      },
+      secondaryAction: {
+        label: "賣方成交案例",
+        href: "/#",
+      },
     },
     {
       id: 1,
       label: "深耕內湖",
       title: "在地專家 精準眼光",
       description:
-        "深耕內湖、南港區多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。",
-      image:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "在內湖區長期深耕所累積的經驗與眼光，讓阿偉幫助你了解各個區域與生活圈的特色。並且即時掌握市場行情，為你找到最適合的物件與房產規劃。",
+      image: "/images/feature-picture-2.jpg",
+      primaryAction: {
+        label: "買方成交案例",
+        href: "/#",
+      },
+      secondaryAction: {
+        label: "了解內湖生活圈",
+        href: "/#",
+      },
     },
     {
       id: 2,
@@ -29,8 +43,15 @@ export const ServicesSection: React.FC = () => {
       title: "買賣知識與法規解析",
       description:
         "買賣房屋涉及繁雜的流程與稅務問題。我們提供完整的地產知識分享，從履約保證、稅務規劃到合約審閱，全程為您的交易安全把關。",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "/images/feature-picture-3.jpg",
+      primaryAction: {
+        label: "了解更多",
+        href: "/#",
+      },
+      secondaryAction: {
+        label: "文章列表",
+        href: "/#",
+      },
     },
   ];
 
@@ -40,6 +61,16 @@ export const ServicesSection: React.FC = () => {
 
   return (
     <section className="py-20 bg-cream relative overflow-hidden">
+      {/* Radial gradient ripple background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: [
+            "radial-gradient(ellipse 600px 600px at 50% 20%, rgba(248,246,240,1) 0%,  rgba(248,246,240,1) 70%, rgba(240,235,225,1) 100%)",
+            "radial-gradient(ellipse 800px 800px at 50% 20%, rgba(248,246,240,1) 0%,  rgba(248,246,240,1) 85%, rgba(240,235,225,1) 100%)",
+          ].join(", "),
+        }}
+      />
       {/* Pattern Overlay */}
       <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
 
@@ -54,11 +85,11 @@ export const ServicesSection: React.FC = () => {
 
       {/* Mobile Layout (< lg) */}
       <div className="lg:hidden max-w-7xl mx-auto px-6 relative z-10">
-        <div className="bg-white shadow-sm border border-gold/10 flex flex-col overflow-hidden">
+        <div className="bg-white shadow-sm flex flex-col overflow-hidden">
           {/* Image */}
-          <div className="w-full h-64 relative bg-gray-200">
+          <div className="w-full h-64 relative h-[280px] md:h-[420px]">
             <div
-              className="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-500"
+              className="absolute inset-0 w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage: `url(${tabs[activeTab].image})`,
               }}
@@ -94,13 +125,18 @@ export const ServicesSection: React.FC = () => {
               <p className="text-muted tracking-widest leading-relaxed text-sm mb-6">
                 {tabs[activeTab].description}
               </p>
-              <button className="mt-auto bg-navy text-white px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors">
-                {tabs[activeTab].id === 0
-                  ? "了解更多"
-                  : tabs[activeTab].id === 1
-                  ? "觀看成交實例"
-                  : "地產資訊"}
-              </button>
+              <div className="flex flex-row gap-3">
+                {tabs[activeTab].primaryAction && (
+                  <button className="mt-auto bg-navy text-white px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors">
+                    {tabs[activeTab].primaryAction.label}
+                  </button>
+                )}
+                {tabs[activeTab].secondaryAction && (
+                  <button className="mt-auto text-navy border border-navy px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors">
+                    {tabs[activeTab].secondaryAction.label}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -168,15 +204,21 @@ export const ServicesSection: React.FC = () => {
             return (
               <div
                 key={tab.id}
-                className={`absolute w-full max-w-5xl transition-all duration-700 ease-in-out ${translate} ${scale} ${zIndex} ${opacity} ${pointerEvents}`}
+                className={`absolute w-full max-w-[80%] transition-all duration-700 ease-in-out ${translate} ${scale} ${zIndex} ${opacity} ${pointerEvents}`}
                 style={{ WebkitMaskImage: mask, maskImage: mask }}
               >
-                <div className="bg-white shadow-2xl border border-gold/10 flex min-h-[450px] overflow-hidden">
+                <div className="bg-white shadow-2xl flex min-h-[450px] overflow-hidden">
                   {/* Image Area */}
-                  <div className="w-[45%] relative bg-gray-200">
+                  <div className="w-[45%] relative">
                     <div
                       className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${tab.image})` }}
+                      style={{
+                        backgroundImage: `url(${tab.image})`,
+                        WebkitMaskImage:
+                          "linear-gradient(to right, black 20%, transparent 100%)",
+                        maskImage:
+                          "linear-gradient(to right, black 20%, transparent 100%)",
+                      }}
                     />
                   </div>
                   {/* Text Content Area */}
@@ -190,13 +232,19 @@ export const ServicesSection: React.FC = () => {
                     <p className="text-muted tracking-widest leading-relaxed text-sm xl:text-base mb-8">
                       {tab.description}
                     </p>
-                    <button className="mt-auto bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors shadow-md">
-                      {tab.id === 0
-                        ? "了解更多"
-                        : tab.id === 1
-                        ? "觀看成交實例"
-                        : "地產資訊"}
-                    </button>
+                    <div className="flex grow" />
+                    <div className="flex flex-row gap-3">
+                      {tab.primaryAction && (
+                        <button className="mt-auto bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors shadow-md">
+                          {tab.primaryAction.label}
+                        </button>
+                      )}
+                      {tab.secondaryAction && (
+                        <button className="mt-auto text-navy border border-navy px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors">
+                          {tab.secondaryAction.label}
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

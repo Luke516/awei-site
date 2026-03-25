@@ -60,7 +60,7 @@ export const StatsSection: React.FC = () => {
         <SectionHeader
           eyebrow="PERFORMANCE"
           title="專業實績證明"
-          subtitle="用數據說話，選擇阿偉，就是選擇最有效率的成交保證。"
+          subtitle="用數據說話，選擇阿偉，就是選擇最有效率的成交保證"
           centered={true}
           theme="dark"
         />
@@ -77,7 +77,7 @@ export const StatsSection: React.FC = () => {
                   : "translateY(24px)",
               }}
             >
-              <span className="text-4xl md:text-5xl font-serif-tc font-bold text-gold mb-2">
+              <span className="text-4xl lg:text-5xl font-serif-tc font-bold text-gold mb-2">
                 {stat.value}
               </span>
               {stat.labels.map((label, j) => (

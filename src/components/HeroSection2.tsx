@@ -23,7 +23,7 @@ export const HeroSection2: React.FC = () => {
       ></div>
 
       {/* 2. Parallelogram Decorative Elements (Right Side Background) */}
-      <div className="absolute left-[10vw] top-0 w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 hidden md:flex flex-row items-end justify-end gap-6">
+      <div className="absolute left-[10vw] top-0 w-[75vw] lg:w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 hidden sm:flex flex-row items-end justify-end gap-6">
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrcs={[
@@ -40,11 +40,11 @@ export const HeroSection2: React.FC = () => {
           imgSrc="/images/landing-bg-large.jpg"
           bgColor="bg-gradient-to-b from-gray-100 to-gold"
           // className="relative w-[280px] h-[110%] right-[10%] top-[10%] shadow-2xl z-20"
-          className="relative w-[20vw] min-w-[360px] h-[90%]"
+          className="relative w-[12vw] md:w-[20vw] min-w-[300px] md:min-w-[360px] h-[90%]"
         >
           {/* Vertical Text inside the block */}
 
-          <p className="absolute top-4 left-[32%] lg:left-[40%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg uppercase whitespace-nowrap drop-shadow-md">
+          <p className="absolute top-4 left-[42%] lg:left-[50%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
             Patrick Huang
           </p>
           <DotPattern
@@ -70,7 +70,7 @@ export const HeroSection2: React.FC = () => {
       </div>
 
       {/* 3. Foreground Content */}
-      <div className="relative z-30 w-full max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
+      <div className="relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
         <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-6">
           <div className="mb-6 animate-fade-in-up">
@@ -83,13 +83,13 @@ export const HeroSection2: React.FC = () => {
           </div>
 
           <div className="mb-8 relative animate-fade-in-up delay-100">
-            <h4 className="text-gray-600 font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
+            <h4 className="text-muted font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
               P R O J E C T &nbsp; M A N A G E R
             </h4>
-            <h1 className="font-serif-tc font-black text-5xl md:text-7xl tracking-widest mb-4 text-navy">
+            <h1 className="font-serif-tc font-black text-6xl md:text-7xl tracking-widest mb-4 text-navy">
               黃阿偉
             </h1>
-            <p className="text-gray-400 font-sans-tc text-sm md:text-base tracking-widest">
+            <p className="text-muted font-sans-tc text-sm md:text-base tracking-widest">
               內湖五期店 專案經理
             </p>
 

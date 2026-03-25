@@ -57,7 +57,7 @@ export const RegionGuideSectionGold: React.FC = () => {
     locations.find((loc) => loc.id === selectedId) || locations[0];
 
   return (
-    <section className="pt-20 bg-[#F0EBE1] relative overflow-hidden shadow-lg">
+    <section className="pt-20 bg-cream relative overflow-hidden shadow-lg">
       {/* Light Pattern Overlay */}
       <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
 
