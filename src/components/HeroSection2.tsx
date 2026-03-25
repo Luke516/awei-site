@@ -72,7 +72,7 @@ export const HeroSection2: React.FC = () => {
       {/* 3. Foreground Content */}
       <div className="relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-2 md:pl-6">
+        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-4 md:pl-6">
           <div className="mb-6 animate-fade-in-up">
             <h3 className="text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
