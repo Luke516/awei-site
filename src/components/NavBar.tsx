@@ -6,7 +6,7 @@ export const NavBar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
-          <a href="#" className="hidden lg:block">
+          <a href="#" className="block md:hidden lg:block">
             <img
               src="/images/logo.png"
               alt="黃阿偉 Logo"
