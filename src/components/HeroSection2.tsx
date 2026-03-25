@@ -23,7 +23,7 @@ export const HeroSection2: React.FC = () => {
       ></div>
 
       {/* 2. Parallelogram Decorative Elements (Right Side Background) */}
-      <div className="absolute left-[10vw] top-0 w-[75vw] lg:w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 hidden sm:flex flex-row items-end justify-end gap-6">
+      <div className="absolute left-[240px] md:left-[10vw] top-0 w-[75vw] lg:w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 flex sm:flex flex-row items-end justify-end gap-6">
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrcs={[
@@ -44,7 +44,7 @@ export const HeroSection2: React.FC = () => {
         >
           {/* Vertical Text inside the block */}
 
-          <p className="absolute top-4 left-[42%] lg:left-[48%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
+          <p className="absolute hidden md:block top-4 left-[42%] lg:left-[48%] text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
             Patrick Huang
           </p>
           <DotPattern
@@ -72,7 +72,7 @@ export const HeroSection2: React.FC = () => {
       {/* 3. Foreground Content */}
       <div className="relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-6">
+        <div className="flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-2 md:pl-6">
           <div className="mb-6 animate-fade-in-up">
             <h3 className="text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -125,7 +125,7 @@ export const HeroSection2: React.FC = () => {
 
             {/* Phone Number */}
             <div className="flex items-center gap-3 text-navy">
-              <div className="w-10 h-10 rounded-full border border-navy flex items-center justify-center">
+              <div className="w-6 md:w-10 h-6 md:h-10 rounded-full border-0 md:border border-navy flex items-center justify-center">
                 <svg
                   width="16"
                   height="16"

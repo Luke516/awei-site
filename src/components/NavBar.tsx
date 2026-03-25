@@ -6,7 +6,7 @@ export const NavBar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
-          <a href="#">
+          <a href="#" className="hidden lg:block">
             <img
               src="/images/logo.png"
               alt="黃阿偉 Logo"
@@ -17,24 +17,48 @@ export const NavBar: React.FC = () => {
 
         {/* Right: Navigation Links */}
         <nav className="hidden md:flex items-center gap-8">
-          <a
+          {/* <a
             href="#"
             className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
           >
             Home
+          </a> */}
+          <a
+            href="#"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+          >
+            阿偉簡介
           </a>
           <a
             href="#"
-            className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
           >
             專任委託服務
           </a>
           <a
             href="#"
-            className="text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+          >
+            阿偉私房指南
+          </a>
+          <a
+            href="#"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+          >
+            全部待售房屋
+          </a>
+          <a
+            href="#"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
           >
             成交案例
           </a>
+          {/* <a
+            href="#"
+            className="text-xs lg:text-sm font-medium text-navy hover:text-gold transition-colors drop-shadow-sm"
+          >
+            房產資訊
+          </a> */}
           <a
             href="#"
             className="text-sm font-medium text-navy border border-navy px-4 py-2 hover:bg-navy hover:text-white transition-colors bg-white/50 backdrop-blur-sm"

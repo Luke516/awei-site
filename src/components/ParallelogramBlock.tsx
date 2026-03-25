@@ -56,7 +56,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
       }}
     >
       <div
-        className={`w-full h-full overflow-hidden relative flex items-center justify-center ${bgColor}`}
+        className={`w-[99%] h-full overflow-hidden relative flex items-center justify-center ${bgColor}`}
         style={{}}
       >
         {/* Render all images for crossfade effect */}
