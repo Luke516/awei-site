@@ -72,6 +72,7 @@ export const PostSection: React.FC = () => {
       style={{
         backgroundImage: "url('/images/main-bg.jpg')",
         backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Pattern Overlay */}
