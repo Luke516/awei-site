@@ -8,9 +8,9 @@ interface SectionHeaderProps {
   theme?: "light" | "dark";
 }
 
-const DecorativeLine: React.FC = () => {
-  return <div className="w-full h-[1px] bg-gold mb-4 opacity-50"></div>;
-};
+// const DecorativeLine: React.FC = () => {
+//   return <div className="w-full h-[1px] bg-gold mb-4 opacity-50"></div>;
+// };
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({
   eyebrow,
