@@ -47,7 +47,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
 
   const blockContent = (
     <div
-      className={`${className} ${animationClass}`}
+      className={`new-landing ${className} ${animationClass}`}
       style={{
         // Using skew to perfectly match the reference image's true parallelogram shape
         transform: "skewX(-18deg)",
@@ -56,14 +56,14 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
       }}
     >
       <div
-        className={`w-[99%] h-full overflow-hidden relative flex items-center justify-center ${bgColor}`}
+        className={`new-landing w-[99%] h-full overflow-hidden relative flex items-center justify-center ${bgColor}`}
         style={{}}
       >
         {/* Render all images for crossfade effect */}
         {images.map((src, index) => (
           // <div
           //   key={src}
-          //   className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+          //   className="new-landing absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
           //   style={{
           //     backgroundImage: `url(${src})`,
           //     opacity: index === currentIndex ? 1 : 0,
@@ -73,7 +73,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
             key={src}
             src={src}
             alt="Parallelogram Block"
-            className="absolute min-w-[50vw] margin-auto h-full object-cover transition-opacity duration-1500 ease-in-out"
+            className="new-landing absolute min-w-[50vw] margin-auto h-full object-cover transition-opacity duration-1500 ease-in-out"
             style={{
               transform: "skewX(18deg)",
               opacity: index === currentIndex ? 0.25 : 0,
@@ -83,7 +83,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
 
         {/* Un-skew the inner content so text/images don't look distorted */}
         <div
-          className="w-full h-full relative"
+          className="new-landing w-full h-full relative"
           style={{ transform: "skewX(18deg)" }}
         >
           {children}

@@ -68,7 +68,7 @@ export const PostSection: React.FC = () => {
 
   return (
     <section
-      className="py-20 bg-cream px-6 lg:px-12 relative"
+      className="new-landing py-20 bg-cream px-6 lg:px-12 relative"
       style={{
         backgroundImage: "url('/images/main-bg.jpg')",
         backgroundSize: "cover",
@@ -76,9 +76,9 @@ export const PostSection: React.FC = () => {
       }}
     >
       {/* Pattern Overlay */}
-      <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
+      <div className="new-landing absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="new-landing max-w-7xl mx-auto relative z-10">
         <SectionHeader
           eyebrow="LATEST INSIGHTS"
           title="房產知識與最新動態"
@@ -86,50 +86,50 @@ export const PostSection: React.FC = () => {
           centered={true}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="new-landing grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="bg-white border border-gold/10 shadow-sm hover:shadow-md transition-shadow group flex flex-col"
+              className="new-landing bg-white border border-gold/10 shadow-sm hover:shadow-md transition-shadow group flex flex-col"
             >
               {/* Placeholder Image Block */}
-              <div className="w-full h-48 bg-gray-200 overflow-hidden relative">
-                <div className="absolute inset-0 flex items-center justify-center text-muted text-sm">
+              <div className="new-landing w-full h-48 bg-gray-200 overflow-hidden relative">
+                <div className="new-landing absolute inset-0 flex items-center justify-center text-muted text-sm">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover"
+                    className="new-landing w-full h-full object-cover"
                   />
                 </div>
               </div>
 
               {/* Card Content */}
-              <div className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-bold text-gold tracking-widest border border-gold px-2 py-1">
+              <div className="new-landing p-6 flex flex-col flex-grow">
+                <div className="new-landing flex items-center justify-between mb-4">
+                  <span className="new-landing text-xs font-bold text-gold tracking-widest border border-gold px-2 py-1">
                     {post.category}
                   </span>
-                  <span className="text-xs text-muted font-en-sans">
+                  <span className="new-landing text-xs text-muted font-en-sans">
                     {post.date}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-serif-tc font-bold text-navy mb-3 group-hover:text-gold transition-colors line-clamp-2">
+                <h3 className="new-landing text-xl font-serif-tc font-bold text-navy mb-3 group-hover:text-gold transition-colors line-clamp-2">
                   {post.title}
                 </h3>
 
-                <p className="text-sm text-muted tracking-widest leading-relaxed mb-6 line-clamp-3 flex-grow">
+                <p className="new-landing text-sm text-muted tracking-widest leading-relaxed mb-6 line-clamp-3 flex-grow">
                   {post.excerpt}
                 </p>
 
-                <div className="mt-auto pt-4 border-t border-gray-100">
+                <div className="new-landing mt-auto pt-4 border-t border-gray-100">
                   <a
                     href="#"
-                    className="inline-flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors"
+                    className="new-landing inline-flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors"
                   >
                     閱讀全文
                     <svg
-                      className="w-4 h-4 ml-2"
+                      className="new-landing w-4 h-4 ml-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -148,8 +148,8 @@ export const PostSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <button className="bg-transparent text-navy font-bold text-sm tracking-widest border-2 border-navy px-8 py-3 hover:bg-navy hover:text-white transition-colors">
+        <div className="new-landing mt-16 text-center">
+          <button className="new-landing bg-transparent text-navy font-bold text-sm tracking-widest border-2 border-navy px-8 py-3 hover:bg-navy hover:text-white transition-colors">
             查看更多文章
           </button>
         </div>

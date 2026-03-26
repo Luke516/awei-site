@@ -54,11 +54,11 @@ export const RegionGuideSection: React.FC = () => {
     locations.find((loc) => loc.id === selectedId) || locations[0];
 
   return (
-    <section className="py-20 bg-navy px-6 lg:px-12 relative overflow-hidden">
+    <section className="new-landing py-20 bg-navy px-6 lg:px-12 relative overflow-hidden">
       {/* Pattern Overlay */}
-      <div className="absolute inset-0 bg-pattern-dark pointer-events-none opacity-50"></div>
+      <div className="new-landing absolute inset-0 bg-pattern-dark pointer-events-none opacity-50"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="new-landing max-w-7xl mx-auto relative z-10">
         <SectionHeader
           eyebrow="REGION GUIDE"
           title="內湖・南港 商圈解析"
@@ -67,14 +67,14 @@ export const RegionGuideSection: React.FC = () => {
           theme="dark"
         />
 
-        <div className="mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="new-landing mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left Column: Map */}
-          <div className="w-full lg:w-2/3 relative rounded-sm">
-            <div className="relative w-full bg-transparent">
+          <div className="new-landing w-full lg:w-2/3 relative rounded-sm">
+            <div className="new-landing relative w-full bg-transparent">
               <img
                 src="/images/region-map.png"
                 alt="內湖/南港 地圖"
-                className="w-full object-contain"
+                className="new-landing w-full object-contain"
               />
 
               {/* Overlay Dots */}
@@ -82,16 +82,16 @@ export const RegionGuideSection: React.FC = () => {
                 <button
                   key={loc.id}
                   onClick={() => setSelectedId(loc.id)}
-                  className={`absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all`}
+                  className={`new-landing absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all`}
                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                 >
-                  <div className="relative">
+                  <div className="new-landing relative">
                     {/* Ping Animation for Active Dot */}
                     {selectedId === loc.id && (
-                      <div className="absolute inset-0 rounded-full bg-gold animate-ping opacity-75"></div>
+                      <div className="new-landing absolute inset-0 rounded-full bg-gold animate-ping opacity-75"></div>
                     )}
                     <div
-                      className={`relative w-6 h-6 md:w-8 md:h-8 rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
+                      className={`new-landing relative w-6 h-6 md:w-8 md:h-8 rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
                         selectedId === loc.id
                           ? "bg-gold scale-110"
                           : "bg-navy hover:bg-gold/80 hover:scale-110"
@@ -99,7 +99,7 @@ export const RegionGuideSection: React.FC = () => {
                     />
                   </div>
                   <div
-                    className={`mt-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg rounded-sm transition-opacity duration-300 ${
+                    className={`new-landing mt-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg rounded-sm transition-opacity duration-300 ${
                       selectedId === loc.id
                         ? "text-navy opacity-100"
                         : "text-muted opacity-0 group-hover:opacity-100"
@@ -113,16 +113,16 @@ export const RegionGuideSection: React.FC = () => {
           </div>
 
           {/* Right Column: Info Card */}
-          <div className="w-full lg:w-1/3 bg-white/10 backdrop-blur-md p-8 md:p-10 border-t-4 border-gold shadow-xl">
-            <h3 className="text-2xl font-serif-tc text-white font-bold tracking-widest mb-4">
+          <div className="new-landing w-full lg:w-1/3 bg-white/10 backdrop-blur-md p-8 md:p-10 border-t-4 border-gold shadow-xl">
+            <h3 className="new-landing text-2xl font-serif-tc text-white font-bold tracking-widest mb-4">
               {selectedLocation.label}
             </h3>
-            <div className="w-12 h-[2px] bg-gold mb-6"></div>
-            <p className="text-gray-300 tracking-widest leading-relaxed text-sm md:text-base">
+            <div className="new-landing w-12 h-[2px] bg-gold mb-6"></div>
+            <p className="new-landing text-gray-300 tracking-widest leading-relaxed text-sm md:text-base">
               {selectedLocation.info}
             </p>
-            <div className="mt-10">
-              <button className="text-white font-bold text-sm tracking-widest border border-white px-6 py-2 hover:bg-gold hover:border-gold transition-colors">
+            <div className="new-landing mt-10">
+              <button className="new-landing text-white font-bold text-sm tracking-widest border border-white px-6 py-2 hover:bg-gold hover:border-gold transition-colors">
                 查看該區物件
               </button>
             </div>

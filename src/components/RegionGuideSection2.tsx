@@ -24,8 +24,8 @@
 //   const selectedLocation = locations.find(loc => loc.id === selectedId) || locations[0];
 
 //   return (
-//     <section className="py-20 bg-white px-6 lg:px-12">
-//       <div className="max-w-7xl mx-auto">
+//     <section className="new-landing py-20 bg-white px-6 lg:px-12">
+//       <div className="new-landing max-w-7xl mx-auto">
 //         <SectionHeader
 //           eyebrow="REGION GUIDE"
 //           title="內湖・南港 商圈解析"
@@ -33,14 +33,14 @@
 //           centered={true}
 //         />
 
-//         <div className="mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+//         <div className="new-landing mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
 //           {/* Left Column: Map */}
-//           <div className="w-full lg:w-2/3 relative border border-gray-200 p-2 bg-cream rounded-sm shadow-sm">
-//             <div className="relative w-full aspect-[4/3] overflow-hidden">
+//           <div className="new-landing w-full lg:w-2/3 relative border border-gray-200 p-2 bg-cream rounded-sm shadow-sm">
+//             <div className="new-landing relative w-full aspect-[4/3] overflow-hidden">
 //               <img
 //                 src="/images/region-map.png"
 //                 alt="內湖/南港 地圖"
-//                 className="w-full h-full object-cover"
+//                 className="new-landing w-full h-full object-cover"
 //               />
 
 //               {/* Overlay Dots */}
@@ -48,16 +48,16 @@
 //                 <button
 //                   key={loc.id}
 //                   onClick={() => setSelectedId(loc.id)}
-//                   className={`absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all`}
+//                   className={`new-landing absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all`}
 //                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
 //                 >
 //                   <div
-//                     className={`w-4 h-4 md:w-5 md:h-5 rounded-full border-2 border-white shadow-md transition-colors ${
+//                     className={`new-landing w-4 h-4 md:w-5 md:h-5 rounded-full border-2 border-white shadow-md transition-colors ${
 //                       selectedId === loc.id ? 'bg-gold scale-125' : 'bg-navy hover:bg-gold/80'
 //                     }`}
 //                   />
 //                   <div
-//                     className={`mt-2 px-2 py-1 text-xs font-bold whitespace-nowrap bg-white/90 backdrop-blur-sm shadow-sm rounded-sm transition-opacity ${
+//                     className={`new-landing mt-2 px-2 py-1 text-xs font-bold whitespace-nowrap bg-white/90 backdrop-blur-sm shadow-sm rounded-sm transition-opacity ${
 //                       selectedId === loc.id ? 'text-navy opacity-100' : 'text-muted opacity-0 group-hover:opacity-100'
 //                     }`}
 //                   >
@@ -69,16 +69,16 @@
 //           </div>
 
 //           {/* Right Column: Info Card */}
-//           <div className="w-full lg:w-1/3 bg-cream p-8 md:p-10 border-t-4 border-gold shadow-sm">
-//             <h3 className="text-2xl font-serif-tc text-navy font-bold tracking-widest mb-4">
+//           <div className="new-landing w-full lg:w-1/3 bg-cream p-8 md:p-10 border-t-4 border-gold shadow-sm">
+//             <h3 className="new-landing text-2xl font-serif-tc text-navy font-bold tracking-widest mb-4">
 //               {selectedLocation.label}
 //             </h3>
-//             <div className="w-12 h-[2px] bg-gold mb-6"></div>
-//             <p className="text-muted tracking-widest leading-relaxed text-sm md:text-base">
+//             <div className="new-landing w-12 h-[2px] bg-gold mb-6"></div>
+//             <p className="new-landing text-muted tracking-widest leading-relaxed text-sm md:text-base">
 //               {selectedLocation.info}
 //             </p>
-//             <div className="mt-10">
-//               <button className="text-navy font-bold text-sm tracking-widest border border-navy px-6 py-2 hover:bg-navy hover:text-white transition-colors">
+//             <div className="new-landing mt-10">
+//               <button className="new-landing text-navy font-bold text-sm tracking-widest border border-navy px-6 py-2 hover:bg-navy hover:text-white transition-colors">
 //                 查看該區物件
 //               </button>
 //             </div>

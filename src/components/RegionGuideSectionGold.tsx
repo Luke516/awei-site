@@ -187,33 +187,33 @@ const LocationContentCard: React.FC<{ location: Location }> = ({
   location,
 }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="new-landing flex flex-col gap-4">
       {/* Video placeholder */}
-      <div className="w-full aspect-video bg-gray-100 rounded-sm overflow-hidden relative">
-        <div className="absolute inset-0 flex items-center justify-center bg-navy/5">
-          <span className="text-muted text-xs tracking-widest">
+      <div className="new-landing w-full aspect-video bg-gray-100 rounded-sm overflow-hidden relative">
+        <div className="new-landing absolute inset-0 flex items-center justify-center bg-navy/5">
+          <span className="new-landing text-muted text-xs tracking-widest">
             影片預留位置
           </span>
         </div>
         <video
           src={location.content.videoUrl}
-          className="relative w-full h-full object-cover"
+          className="new-landing relative w-full h-full object-cover"
           controls
           playsInline
         />
       </div>
 
       {/* Image placeholder */}
-      <div className="w-full aspect-video bg-cream rounded-sm overflow-hidden relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-muted text-xs tracking-widest">
+      <div className="new-landing w-full aspect-video bg-cream rounded-sm overflow-hidden relative">
+        <div className="new-landing absolute inset-0 flex items-center justify-center">
+          <span className="new-landing text-muted text-xs tracking-widest">
             區域照片預留位置
           </span>
         </div>
         <img
           src={location.content.imageUrl}
           alt={location.label}
-          className="relative w-full h-full object-cover"
+          className="new-landing relative w-full h-full object-cover"
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).style.display = "none";
           }}
@@ -221,7 +221,7 @@ const LocationContentCard: React.FC<{ location: Location }> = ({
       </div>
 
       {/* Short description */}
-      <p className="text-muted tracking-widest leading-relaxed text-sm">
+      <p className="new-landing text-muted tracking-widest leading-relaxed text-sm">
         {location.content.description}
       </p>
     </div>
@@ -272,19 +272,19 @@ export const RegionGuideSectionGold: React.FC = () => {
   };
 
   return (
-    <section className="pt-20 bg-cream relative overflow-hidden shadow-lg">
+    <section className="new-landing pt-20 bg-cream relative overflow-hidden shadow-lg">
       {/* Grid pattern background */}
       <GridPattern
         width={48}
         height={48}
         strokeDasharray={"16 8"}
-        className="fill-gold/10 stroke-gold/20 [mask-image:linear-gradient(to_right,white_0%,transparent_50%,white_100%)]"
+        className="new-landing fill-gold/10 stroke-gold/20 [mask-image:linear-gradient(to_right,white_0%,transparent_50%,white_100%)]"
       />
       {/* Light dot overlay on top of grid */}
-      <div className="absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
+      <div className="new-landing absolute inset-0 bg-pattern-light pointer-events-none opacity-50"></div>
 
-      <div className="w-full relative z-10 flex flex-col items-center">
-        <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="new-landing w-full relative z-10 flex flex-col items-center">
+        <div className="new-landing w-full max-w-7xl mx-auto px-6 lg:px-12">
           <SectionHeader
             eyebrow="REGION GUIDE"
             title="內湖生活圈導覽"
@@ -295,12 +295,12 @@ export const RegionGuideSectionGold: React.FC = () => {
         </div>
 
         {/* ── Mobile layout (< md): simplified map + button list ── */}
-        <div className="md:hidden w-full px-4 mb-8">
-          <div className="relative w-full mb-6">
+        <div className="new-landing md:hidden w-full px-4 mb-8">
+          <div className="new-landing relative w-full mb-6">
             <img
               src="/images/simplified-map.png"
               alt="內湖 簡易地圖"
-              className="w-full object-contain rounded-sm"
+              className="new-landing w-full object-contain rounded-sm"
               style={{ filter: "drop-shadow(0 0 12px rgba(0, 0, 0, 0.2))" }}
             />
 
@@ -310,7 +310,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
                 style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
-                className={`absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-colors duration-200 ${
+                className={`new-landing absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-colors duration-200 ${
                   selectedId === loc.id ? "bg-navy" : "bg-gold"
                 }`}
               >
@@ -320,19 +320,19 @@ export const RegionGuideSectionGold: React.FC = () => {
           </div>
 
           {/* Button grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="new-landing grid grid-cols-1 sm:grid-cols-2 gap-2">
             {locations.map((loc) => (
               <button
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
-                className={`px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-colors text-left ${
+                className={`new-landing px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-colors text-left ${
                   selectedId === loc.id
                     ? "bg-navy text-white border-navy"
                     : "bg-white text-navy border-gold/30 hover:border-navy hover:bg-navy/5"
                 }`}
               >
                 <div
-                  className={`w-9 h-9 m-0 flex items-center justify-center text-md pb-0.5 pl-0.5 ${
+                  className={`new-landing w-9 h-9 m-0 flex items-center justify-center text-md pb-0.5 pl-0.5 ${
                     selectedId === loc.id
                       ? "bg-navy text-white"
                       : "bg-gold text-white"
@@ -340,21 +340,21 @@ export const RegionGuideSectionGold: React.FC = () => {
                 >
                   {loc.id}
                 </div>
-                <span className="m-0 p-0 text-sm">{loc.label}</span>
+                <span className="new-landing m-0 p-0 text-sm">{loc.label}</span>
               </button>
             ))}
           </div>
         </div>
 
         {/* ── Desktop/Tablet layout (md+): full map with dots + info card ── */}
-        <div className="hidden md:flex w-full flex-row gap-2 lg:gap-2 items-start justify-center px-4 lg:px-0">
+        <div className="new-landing hidden md:flex w-full flex-row gap-2 lg:gap-2 items-start justify-center px-4 lg:px-0">
           {/* Left Column: Map */}
-          <div className="w-full lg:w-[75%] max-w-7xl relative">
-            <div className="relative w-full">
+          <div className="new-landing w-full lg:w-[75%] max-w-7xl relative">
+            <div className="new-landing relative w-full">
               <img
                 src="/images/region-map.png"
                 alt="內湖 地圖"
-                className="w-full object-contain"
+                className="new-landing w-full object-contain"
                 style={{ filter: "drop-shadow(0 0 16px rgba(0, 0, 0, 0.25))" }}
               />
 
@@ -369,11 +369,11 @@ export const RegionGuideSectionGold: React.FC = () => {
                     ).matches;
                     handleDotClick(loc.id, isDesktop);
                   }}
-                  className="absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all"
+                  className="new-landing absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all"
                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                 >
                   <div
-                    className={`mb-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg border border-gold/20 rounded-sm transition-opacity duration-300 ${
+                    className={`new-landing mb-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg border border-gold/20 rounded-sm transition-opacity duration-300 ${
                       selectedId === loc.id
                         ? "text-navy opacity-100"
                         : "text-muted opacity-0 group-hover:opacity-100"
@@ -381,19 +381,19 @@ export const RegionGuideSectionGold: React.FC = () => {
                   >
                     {loc.label}
                   </div>
-                  <div className="relative w-17 h-17">
+                  <div className="new-landing relative w-17 h-17">
                     {/* Ping / ripple effect */}
                     {selectedId === loc.id && (
-                      <div className="absolute inset-0 w-17 h-17 rounded-full bg-gold/40 animate-ping opacity-75"></div>
+                      <div className="new-landing absolute inset-0 w-17 h-17 rounded-full bg-gold/40 animate-ping opacity-75"></div>
                     )}
                     <div
-                      className={`relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
+                      className={`new-landing relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
                         selectedId === loc.id
                           ? "bg-navy scale-110"
                           : "bg-gold hover:bg-white hover:scale-110"
                       }`}
                     ></div>
-                    <div className="absolute inset-0 flex items-center justify-center text-white text-xs p-2">
+                    <div className="new-landing absolute inset-0 flex items-center justify-center text-white text-xs p-2">
                       {loc.label}
                     </div>
                   </div>
@@ -403,9 +403,9 @@ export const RegionGuideSectionGold: React.FC = () => {
           </div>
 
           {/* Right Column: Info Card — desktop only (lg+) */}
-          <div className="hidden lg:flex flex flex-row items-center justify-end relative max-w-[26%]">
+          <div className="new-landing hidden lg:flex flex flex-row items-center justify-end relative max-w-[26%]">
             <div
-              className={`bg-white border-t-0 border-navy shadow-xl hidden lg:flex flex-col overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`new-landing bg-white border-t-0 border-navy shadow-xl hidden lg:flex flex-col overflow-hidden transition-all duration-500 ease-in-out ${
                 selectedId !== null
                   ? "w-[400px] opacity-100 p-6"
                   : "w-0 opacity-0 p-0"
@@ -414,26 +414,26 @@ export const RegionGuideSectionGold: React.FC = () => {
               {selectedLocation ? (
                 <div
                   key={selectedId}
-                  className="animate-in slide-in-from-right-4 fade-in-0 duration-300 flex flex-col relative"
+                  className="new-landing animate-in slide-in-from-right-4 fade-in-0 duration-300 flex flex-col relative"
                 >
                   {/* Close button */}
                   <button
                     onClick={() => setSelectedId(null)}
-                    className="absolute top-0 right-0 p-1 text-muted hover:text-navy transition-colors"
+                    className="new-landing absolute top-0 right-0 p-1 text-muted hover:text-navy transition-colors"
                     aria-label="關閉"
                   >
                     <XIcon size={16} />
                   </button>
 
-                  <h3 className="text-2xl font-serif-tc text-navy font-bold tracking-widest mb-4 pr-6">
+                  <h3 className="new-landing text-2xl font-serif-tc text-navy font-bold tracking-widest mb-4 pr-6">
                     {selectedLocation.label}
                   </h3>
-                  <div className="w-12 h-[2px] bg-gold mb-6"></div>
+                  <div className="new-landing w-12 h-[2px] bg-gold mb-6"></div>
 
                   <LocationContentCard location={selectedLocation} />
                 </div>
               ) : (
-                <div className="flex items-center justify-center h-40 text-muted text-sm tracking-widest">
+                <div className="new-landing flex items-center justify-center h-40 text-muted text-sm tracking-widest">
                   請選擇一個生活圈
                 </div>
               )}
@@ -442,7 +442,7 @@ export const RegionGuideSectionGold: React.FC = () => {
         </div>
 
         {/* ── Dialog — shown on < lg (tablet and mobile) ── */}
-        <div className="lg:hidden">
+        <div className="new-landing lg:hidden">
           <Dialog
             open={dialogOpen}
             onOpenChange={(open) => {
@@ -450,14 +450,14 @@ export const RegionGuideSectionGold: React.FC = () => {
               if (!open) setSelectedId(null);
             }}
           >
-            <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto data-[state=open]:slide-in-from-bottom-4 bg-white">
+            <DialogContent className="new-landing sm:max-w-lg max-h-[90vh] overflow-y-auto data-[state=open]:slide-in-from-bottom-4 bg-white">
               {selectedLocation && (
                 <>
                   <DialogHeader>
-                    <DialogTitle className="font-serif-tc text-navy tracking-widest text-xl">
+                    <DialogTitle className="new-landing font-serif-tc text-navy tracking-widest text-xl">
                       {selectedLocation.label}
                     </DialogTitle>
-                    <div className="w-10 h-[2px] bg-gold mt-1"></div>
+                    <div className="new-landing w-10 h-[2px] bg-gold mt-1"></div>
                   </DialogHeader>
 
                   <LocationContentCard location={selectedLocation} />
@@ -468,14 +468,14 @@ export const RegionGuideSectionGold: React.FC = () => {
         </div>
 
         {/* Secondary Video Introduction */}
-        <div className="bg-navy pb-20 w-full mx-auto mt-24 flex flex-col md:flex-row gap-8 lg:gap-16 items-center p-8 md:p-12 shadow-sm border border-gold/10">
+        <div className="new-landing bg-navy pb-20 w-full mx-auto mt-24 flex flex-col md:flex-row gap-8 lg:gap-16 items-center p-8 md:p-12 shadow-sm border border-gold/10">
           <div
             ref={videoSectionRef}
-            className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-8 lg:gap-16 items-center"
+            className="new-landing w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-8 lg:gap-16 items-center"
           >
             {/* Video Container — slides in from the left */}
             <div
-              className={`w-full md:w-1/2 relative aspect-video rounded-sm overflow-hidden bg-gray-100 shadow-md transition-all duration-700 ease-out ${
+              className={`new-landing w-full md:w-1/2 relative aspect-video rounded-sm overflow-hidden bg-gray-100 shadow-md transition-all duration-700 ease-out ${
                 isVideoVisible
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-8"
@@ -490,31 +490,31 @@ export const RegionGuideSectionGold: React.FC = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-                className="absolute inset-0"
+                className="new-landing absolute inset-0"
               ></iframe>
             </div>
 
             {/* Text Content — slides in from the right, staggered */}
             <div
-              className={`w-full md:w-1/2 flex flex-col items-start text-left transition-all duration-700 ease-out delay-200 ${
+              className={`new-landing w-full md:w-1/2 flex flex-col items-start text-left transition-all duration-700 ease-out delay-200 ${
                 isVideoVisible
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 translate-x-8"
               }`}
             >
-              <h3 className="text-gold font-bold tracking-widest text-sm mb-3 border-l-2 border-gold pl-3">
+              <h3 className="new-landing text-gold font-bold tracking-widest text-sm mb-3 border-l-2 border-gold pl-3">
                 精華影片
               </h3>
-              <h4 className="text-2xl md:text-3xl font-serif-tc text-white font-bold tracking-widest leading-relaxed mb-6">
+              <h4 className="new-landing text-2xl md:text-3xl font-serif-tc text-white font-bold tracking-widest leading-relaxed mb-6">
                 內湖影片介紹
               </h4>
-              <p className="text-white/70 tracking-widest leading-relaxed text-sm md:text-base mb-8">
+              <p className="new-landing text-white/70 tracking-widest leading-relaxed text-sm md:text-base mb-8">
                 我親自走訪每個大內湖區塊， 這裡的生活步調不像是信義區如此緊湊，
                 但綠意滿載和湖景宜人的內湖，讓人介紹時會湧出滿滿的榮譽感。
                 <br />
                 因為我們內湖有的優點，別的地段可不一定會有~
               </p>
-              <button className="bg-gold border border-navy text-navy font-bold text-sm tracking-widest px-8 py-3 transition-colors">
+              <button className="new-landing bg-gold border border-navy text-navy font-bold text-sm tracking-widest px-8 py-3 transition-colors">
                 觀看更多影片
               </button>
             </div>

@@ -52,11 +52,14 @@ export const StatsSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-navy py-20 px-6 lg:px-12 border-t border-gold/20 relative">
+    <section className="new-landing bg-navy py-20 px-6 lg:px-12 border-t border-gold/20 relative">
       {/* Pattern Overlay */}
-      <div className="absolute inset-0 bg-pattern-dark pointer-events-none opacity-50"></div>
+      <div className="new-landing absolute inset-0 bg-pattern-dark pointer-events-none opacity-50"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10" ref={sectionRef}>
+      <div
+        className="new-landing max-w-7xl mx-auto relative z-10"
+        ref={sectionRef}
+      >
         <SectionHeader
           eyebrow="PERFORMANCE"
           title="專業實績證明"
@@ -65,11 +68,11 @@ export const StatsSection: React.FC = () => {
           theme="dark"
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x-0 md:divide-x md:divide-gold/20 mt-12">
+        <div className="new-landing grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x-0 md:divide-x md:divide-gold/20 mt-12">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="flex flex-col items-center justify-center text-center px-4 transition-all duration-700 ease-out"
+              className="new-landing flex flex-col items-center justify-center text-center px-4 transition-all duration-700 ease-out"
               style={{
                 opacity: visibleItems[i] ? 1 : 0,
                 transform: visibleItems[i]
@@ -77,19 +80,19 @@ export const StatsSection: React.FC = () => {
                   : "translateY(24px)",
               }}
             >
-              <span className="text-4xl lg:text-5xl font-serif-tc font-bold text-gold mb-2">
+              <span className="new-landing text-4xl lg:text-5xl font-serif-tc font-bold text-gold mb-2">
                 {stat.value}
               </span>
               {stat.labels.map((label, j) => (
                 <span
                   key={j}
-                  className="text-white text-sm md:text-base tracking-widest"
+                  className="new-landing text-white text-sm md:text-base tracking-widest"
                 >
                   {label}
                 </span>
               ))}
               {stat.footnote && (
-                <span className="text-gray-400 text-xs mt-2">
+                <span className="new-landing text-gray-400 text-xs mt-2">
                   {stat.footnote}
                 </span>
               )}

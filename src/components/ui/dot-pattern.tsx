@@ -46,7 +46,7 @@ interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
  *   width={20}
  *   height={20}
  *   glow={true}
- *   className="opacity-50"
+ *   className="new-landing opacity-50"
  * />
  *
  * @notes

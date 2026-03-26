@@ -2,16 +2,16 @@ import React from "react";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center overflow-hidden">
+    <section className="new-landing relative w-full h-[80vh] min-h-[600px] flex items-center overflow-hidden">
       {/* 1. Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="new-landing absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: 'url("/images/landing-bg-large.jpg")' }}
       ></div>
 
       {/* 2. Overlay with Navy color + 70% opacity and repeating diagonal lines */}
       <div
-        className="absolute inset-0 z-10 opacity-80"
+        className="new-landing absolute inset-0 z-10 opacity-80"
         style={{
           backgroundColor: "#1D263B",
           backgroundImage:
@@ -20,44 +20,44 @@ export const HeroSection: React.FC = () => {
       ></div>
 
       {/* 3. Foreground Content */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between h-full">
+      <div className="new-landing relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between h-full">
         {/* Left Column: Text Block */}
-        <div className="flex flex-col text-white w-full md:w-1/2 pt-20 md:pt-0">
-          <div className="mb-6">
-            <h3 className="text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
+        <div className="new-landing flex flex-col text-white w-full md:w-1/2 pt-20 md:pt-0">
+          <div className="new-landing mb-6">
+            <h3 className="new-landing text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
             </h3>
-            <p className="font-serif-tc font-bold text-xl md:text-3xl tracking-widest text-cream">
+            <p className="new-landing font-serif-tc font-bold text-xl md:text-3xl tracking-widest text-cream">
               內湖五期超新星
             </p>
           </div>
 
-          <div className="mb-10 relative">
-            <h4 className="text-gray-300 font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
+          <div className="new-landing mb-10 relative">
+            <h4 className="new-landing text-gray-300 font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
               P R O J E C T &nbsp; M A N A G E R
             </h4>
-            <h1 className="font-serif-tc font-black text-5xl md:text-7xl tracking-widest mb-4 text-white">
+            <h1 className="new-landing font-serif-tc font-black text-5xl md:text-7xl tracking-widest mb-4 text-white">
               黃阿偉
             </h1>
-            <p className="text-gray-300 font-sans-tc text-sm md:text-base tracking-widest">
+            <p className="new-landing text-gray-300 font-sans-tc text-sm md:text-base tracking-widest">
               內湖五期店 專案經理
             </p>
 
             {/* Divider line */}
-            <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-[2px] h-full bg-gold/50 hidden md:block"></div>
+            <div className="new-landing absolute -left-6 top-1/2 -translate-y-1/2 w-[2px] h-full bg-gold/50 hidden md:block"></div>
           </div>
 
-          <div className="mb-8">
-            <p className="text-gold font-en-serif italic tracking-widest text-sm md:text-lg">
+          <div className="new-landing mb-8">
+            <p className="new-landing text-gold font-en-serif italic tracking-widest text-sm md:text-lg">
               Your Vision. Our Expertise.
             </p>
           </div>
 
-          <div className="flex items-center gap-4 text-cream">
-            <span className="font-en-sans font-bold text-lg md:text-xl tracking-wider">
+          <div className="new-landing flex items-center gap-4 text-cream">
+            <span className="new-landing font-en-sans font-bold text-lg md:text-xl tracking-wider">
               0987-817-916
             </span>
-            <div className="w-8 h-8 rounded-full border border-cream flex items-center justify-center">
+            <div className="new-landing w-8 h-8 rounded-full border border-cream flex items-center justify-center">
               <svg
                 width="14"
                 height="14"
@@ -75,14 +75,14 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Right Column: Portrait */}
-        <div className="w-full md:w-1/2 h-full flex items-end justify-center md:justify-end relative mt-10 md:mt-0">
+        <div className="new-landing w-full md:w-1/2 h-full flex items-end justify-center md:justify-end relative mt-10 md:mt-0">
           <img
             src="/images/awei-portrait.png"
             alt="黃阿偉 Portrait"
-            className="h-3/4 md:h-[90%] object-contain object-bottom drop-shadow-2xl z-20"
+            className="new-landing h-3/4 md:h-[90%] object-contain object-bottom drop-shadow-2xl z-20"
           />
           {/* Decorative element behind portrait */}
-          <div className="absolute bottom-10 right-10 w-48 h-48 border border-gold/30 z-10 hidden md:block"></div>
+          <div className="new-landing absolute bottom-10 right-10 w-48 h-48 border border-gold/30 z-10 hidden md:block"></div>
         </div>
       </div>
     </section>
