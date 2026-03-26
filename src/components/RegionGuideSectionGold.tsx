@@ -431,12 +431,6 @@ export const RegionGuideSectionGold: React.FC = () => {
                   <div className="w-12 h-[2px] bg-gold mb-6"></div>
 
                   <LocationContentCard location={selectedLocation} />
-
-                  {/* <div className="mt-6">
-                  <button className="w-full text-white bg-navy font-bold text-sm tracking-widest px-6 py-4 hover:bg-gold transition-colors">
-                    查看更多資訊
-                  </button>
-                </div> */}
                 </div>
               ) : (
                 <div className="flex items-center justify-center h-40 text-muted text-sm tracking-widest">
@@ -467,10 +461,6 @@ export const RegionGuideSectionGold: React.FC = () => {
                   </DialogHeader>
 
                   <LocationContentCard location={selectedLocation} />
-
-                  {/* <button className="w-full text-white bg-navy font-bold text-sm tracking-widest px-6 py-3 hover:bg-gold transition-colors mt-2">
-                    查看更多資訊
-                  </button> */}
                 </>
               )}
             </DialogContent>

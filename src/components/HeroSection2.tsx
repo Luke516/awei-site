@@ -8,7 +8,10 @@ export const HeroSection2: React.FC = () => {
       {/* 1. Background Pattern / Subtle Base */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
-        style={{ backgroundImage: 'url("/images/landing-bg-large.jpg")' }}
+        style={{
+          backgroundImage:
+            'url("https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/Generated-Image-March-23-2026-6_02AM-scaled.jpg")',
+        }}
       ></div>
       {/* Grid Pattern overlay (optional to match reference abstract lines) */}
       <div
@@ -27,9 +30,7 @@ export const HeroSection2: React.FC = () => {
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrcs={[
-            // "/images/hero-picture-1.jpg",
-            "/images/hero-picture-4.jpg",
-            // "/images/hero-picture-5.jpg",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/忠泰恆美.jpg",
           ]}
           slideFrom="bottom"
           className="relative w-[14vw] h-[75%] max-w-[320px] mb-12 hidden lg:flex"
@@ -39,7 +40,6 @@ export const HeroSection2: React.FC = () => {
         <ParallelogramBlock
           imgSrc="/images/landing-bg-large.jpg"
           bgColor="bg-gradient-to-b from-gray-100 to-gold"
-          // className="relative w-[280px] h-[110%] right-[10%] top-[10%] shadow-2xl z-20"
           className="relative w-[12vw] md:w-[20vw] min-w-[300px] md:min-w-[360px] h-[90%]"
         >
           {/* Vertical Text inside the block */}
@@ -58,10 +58,7 @@ export const HeroSection2: React.FC = () => {
         {/* Block 3: Left building image (Smaller) */}
         <ParallelogramBlock
           imgSrcs={[
-            // "/images/hero-picture-2.jpg",
-            // "/images/hero-picture-3.jpg",
-            // "/images/hero-picture-6.jpg",
-            "/images/hero-picture-8.png",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/nangang-musongu-ceiling-effect-2.png",
           ]}
           slideFrom="top"
           bgColor="bg-navy/40"
@@ -155,7 +152,8 @@ export const HeroSection2: React.FC = () => {
         {/* Right Column: Portrait */}
         <div className="absolute right-0 md:right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-w-[50vw] max-h-[500px] md:max-h-[900px] flex items-end justify-end z-40 animate-fade-in-up delay-400">
           <img
-            src="/images/awei-portrait.png"
+            src="/images/awei-hero-portrait-2.png"
+            // src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/awei-hero-portrait-2.png"
             alt="黃阿偉 Portrait"
             className="h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none"
           />
