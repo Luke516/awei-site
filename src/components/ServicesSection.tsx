@@ -15,11 +15,11 @@ export const ServicesSection: React.FC = () => {
         "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/02/LINE_ALBUM_240219_29-e1709004651415.jpg",
       primaryAction: {
         label: "了解更多",
-        href: "/#",
+        href: "https://www.0987817916.tw/service/",
       },
       secondaryAction: {
         label: "賣方成交案例",
-        href: "/#",
+        href: "https://www.0987817916.tw/category/%e8%b3%a3%e6%96%b9%e6%88%90%e4%ba%a4%e6%a1%88%e4%be%8b/",
       },
     },
     {
@@ -32,11 +32,11 @@ export const ServicesSection: React.FC = () => {
         "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/03/327912_0.jpg",
       primaryAction: {
         label: "買方成交案例",
-        href: "/#",
+        href: "https://www.0987817916.tw/category/%e8%b2%b7%e6%96%b9%e6%88%90%e4%ba%a4%e6%a1%88%e4%be%8b/",
       },
       secondaryAction: {
         label: "了解內湖生活圈",
-        href: "/#",
+        href: "/#neihu-guide",
       },
     },
     {
@@ -49,11 +49,11 @@ export const ServicesSection: React.FC = () => {
         "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2025/07/HOU01.jpg",
       primaryAction: {
         label: "了解更多",
-        href: "/#",
+        href: "https://www.0987817916.tw/category/knowledge/",
       },
       secondaryAction: {
         label: "文章列表",
-        href: "/#",
+        href: "https://www.0987817916.tw/article-list-awei/",
       },
     },
   ];
@@ -130,14 +130,24 @@ export const ServicesSection: React.FC = () => {
               </p>
               <div className="new-landing flex flex-row gap-3">
                 {tabs[activeTab].primaryAction && (
-                  <button className="new-landing mt-auto bg-navy text-white px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors">
+                  <a
+                    href={tabs[activeTab].primaryAction.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="new-landing mt-auto bg-navy text-white px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors"
+                  >
                     {tabs[activeTab].primaryAction.label}
-                  </button>
+                  </a>
                 )}
                 {tabs[activeTab].secondaryAction && (
-                  <button className="new-landing mt-auto text-navy border border-navy px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors">
+                  <a
+                    href={tabs[activeTab].secondaryAction.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="new-landing mt-auto text-navy border border-navy px-6 py-2 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors"
+                  >
                     {tabs[activeTab].secondaryAction.label}
-                  </button>
+                  </a>
                 )}
               </div>
             </div>
@@ -238,14 +248,24 @@ export const ServicesSection: React.FC = () => {
                     <div className="new-landing flex grow" />
                     <div className="new-landing flex flex-row gap-3">
                       {tab.primaryAction && (
-                        <button className="new-landing mt-auto bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors shadow-md">
+                        <a
+                          href={tab.primaryAction.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="new-landing mt-auto bg-navy text-white px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy/90 transition-colors shadow-md"
+                        >
                           {tab.primaryAction.label}
-                        </button>
+                        </a>
                       )}
                       {tab.secondaryAction && (
-                        <button className="new-landing mt-auto text-navy border border-navy px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors">
+                        <a
+                          href={tab.secondaryAction.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="new-landing mt-auto text-navy border border-navy px-8 py-3 text-sm tracking-widest font-bold hover:bg-navy hover:text-white transition-colors"
+                        >
                           {tab.secondaryAction.label}
-                        </button>
+                        </a>
                       )}
                     </div>
                   </div>

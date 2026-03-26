@@ -310,7 +310,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
                 style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
-                className={`new-landing absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-colors duration-200 ${
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-colors duration-200 ${
                   selectedId === loc.id ? "bg-navy" : "bg-gold"
                 }`}
               >
@@ -325,14 +325,14 @@ export const RegionGuideSectionGold: React.FC = () => {
               <button
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
-                className={`new-landing px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-colors text-left ${
+                className={`px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-colors text-left ${
                   selectedId === loc.id
                     ? "bg-navy text-white border-navy"
                     : "bg-white text-navy border-gold/30 hover:border-navy hover:bg-navy/5"
                 }`}
               >
                 <div
-                  className={`new-landing w-9 h-9 m-0 flex items-center justify-center text-md pb-0.5 pl-0.5 ${
+                  className={`w-9 h-9 m-0 flex items-center justify-center text-md pb-0.5 pl-0.5 ${
                     selectedId === loc.id
                       ? "bg-navy text-white"
                       : "bg-gold text-white"
@@ -373,7 +373,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                 >
                   <div
-                    className={`new-landing mb-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg border border-gold/20 rounded-sm transition-opacity duration-300 ${
+                    className={`mb-2 px-3 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-lg border border-gold/20 rounded-sm transition-opacity duration-300 ${
                       selectedId === loc.id
                         ? "text-navy opacity-100"
                         : "text-muted opacity-0 group-hover:opacity-100"
@@ -387,7 +387,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                       <div className="new-landing absolute inset-0 w-17 h-17 rounded-full bg-gold/40 animate-ping opacity-75"></div>
                     )}
                     <div
-                      className={`new-landing relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
+                      className={`relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
                         selectedId === loc.id
                           ? "bg-navy scale-110"
                           : "bg-gold hover:bg-white hover:scale-110"
@@ -405,7 +405,7 @@ export const RegionGuideSectionGold: React.FC = () => {
           {/* Right Column: Info Card — desktop only (lg+) */}
           <div className="new-landing hidden lg:flex flex flex-row items-center justify-end relative max-w-[26%]">
             <div
-              className={`new-landing bg-white border-t-0 border-navy shadow-xl hidden lg:flex flex-col overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`bg-white border-t-0 border-navy shadow-xl hidden lg:flex flex-col overflow-hidden transition-all duration-500 ease-in-out ${
                 selectedId !== null
                   ? "w-[400px] opacity-100 p-6"
                   : "w-0 opacity-0 p-0"
@@ -475,7 +475,7 @@ export const RegionGuideSectionGold: React.FC = () => {
           >
             {/* Video Container — slides in from the left */}
             <div
-              className={`new-landing w-full md:w-1/2 relative aspect-video rounded-sm overflow-hidden bg-gray-100 shadow-md transition-all duration-700 ease-out ${
+              className={`w-full md:w-1/2 relative aspect-video rounded-sm overflow-hidden bg-gray-100 shadow-md transition-all duration-700 ease-out ${
                 isVideoVisible
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-8"
@@ -496,7 +496,7 @@ export const RegionGuideSectionGold: React.FC = () => {
 
             {/* Text Content — slides in from the right, staggered */}
             <div
-              className={`new-landing w-full md:w-1/2 flex flex-col items-start text-left transition-all duration-700 ease-out delay-200 ${
+              className={`w-full md:w-1/2 flex flex-col items-start text-left transition-all duration-700 ease-out delay-200 ${
                 isVideoVisible
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 translate-x-8"

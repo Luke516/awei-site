@@ -1,8 +1,8 @@
 // import { NavBar } from "./components/NavBar";
 // import { HeroSection2 } from "./components/HeroSection2";
-// import { StatsSection } from "./components/StatsSection";
-// import { ServicesSection } from "./components/ServicesSection";
-import { RegionGuideSectionGold } from "./components/RegionGuideSectionGold";
+import { StatsSection } from "./components/StatsSection";
+import { ServicesSection } from "./components/ServicesSection";
+// import { RegionGuideSectionGold } from "./components/RegionGuideSectionGold";
 // import { PostSection } from "./components/PostSection";
 // import { Footer } from "./components/Footer";
 
@@ -12,9 +12,9 @@ function App() {
       {/* <NavBar /> */}
       <main className="new-landing flex-grow w-full relative">
         {/* <HeroSection2 /> */}
-        {/* <StatsSection /> */}
-        {/* <ServicesSection /> */}
-        <RegionGuideSectionGold />
+        <StatsSection />
+        <ServicesSection />
+        {/* <RegionGuideSectionGold /> */}
         {/* <PostSection /> */}
       </main>
       {/* <Footer /> */}

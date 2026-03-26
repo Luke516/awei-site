@@ -103,7 +103,12 @@ export const HeroSection2: React.FC = () => {
           {/* CTA & Contact Section */}
           <div className="new-landing flex flex-col lg:flex-row items-start lg:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
             {/* Call to Action Button */}
-            <button className="new-landing bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://line.me/ti/p/nW4QI48Udq"
+              className="new-landing bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer"
+            >
               立即預約
               <svg
                 className="new-landing w-4 h-4 group-hover:translate-x-1 transition-transform"
@@ -118,7 +123,7 @@ export const HeroSection2: React.FC = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </button>
+            </a>
 
             {/* Phone Number */}
             <div className="new-landing flex items-center gap-3 text-navy">
