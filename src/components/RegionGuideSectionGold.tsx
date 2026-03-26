@@ -430,10 +430,6 @@ export const RegionGuideSectionGold: React.FC = () => {
                   </h3>
                   <div className="w-12 h-[2px] bg-gold mb-6"></div>
 
-                  {/* <p className="text-muted tracking-widest leading-relaxed text-sm md:text-base mb-6">
-                  {selectedLocation.info}
-                </p> */}
-
                   <LocationContentCard location={selectedLocation} />
 
                   {/* <div className="mt-6">
@@ -469,10 +465,6 @@ export const RegionGuideSectionGold: React.FC = () => {
                     </DialogTitle>
                     <div className="w-10 h-[2px] bg-gold mt-1"></div>
                   </DialogHeader>
-
-                  <p className="text-muted tracking-widest leading-relaxed text-sm">
-                    {selectedLocation.info}
-                  </p>
 
                   <LocationContentCard location={selectedLocation} />
 
