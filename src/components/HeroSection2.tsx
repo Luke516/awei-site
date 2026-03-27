@@ -230,7 +230,7 @@ export const HeroSection2: React.FC = () => {
       <div className="new-landing absolute bottom-0 left-0 w-full z-50">
         {/* User's custom skewed info box */}
         <div
-          className="new-landing absolute bottom-2 md:bottom-8 min-h-15 left-[-5%] w-[400px] md:w-[500px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-center px-6 lg:px-12 gap-2 md:gap-4 py-3"
+          className="new-landing absolute bottom-2 md:bottom-8 min-h-15 left-[-32px] w-[400px] md:w-[500px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-center md:justify-end px-6 lg:px-12 gap-2 md:gap-4 py-3"
           style={{ transform: "skewX(30deg)" }}
         >
           <div
