@@ -4,7 +4,7 @@ import { StatsSection } from "./components/StatsSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { RegionGuideSectionGold } from "./components/RegionGuideSectionGold";
 import { PostSection } from "./components/PostSection";
-import { Footer } from "./components/Footer";
+// import { Footer } from "./components/Footer";
 
 function App() {
   return (
