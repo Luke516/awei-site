@@ -32,10 +32,11 @@ const locations: Location[] = [
     x: 21.77,
     y: 14.2,
     info: "西湖生活圈擁有捷運、科技園區、生活機能的便捷。 生活機能有西湖市場、285巷美食街、近大直美麗華、金面山親山步道、仙樹公園、西湖公園",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "aQNUpgQGLrE",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-7西湖生活圈.jpg",
       description:
         "西湖擁有捷運、科技園區、生活機能的便捷。 生活機能有西湖市場、285巷美食街、近大直美麗華、金面山親山步道、仙樹公園、西湖公園",
     },
@@ -46,10 +47,11 @@ const locations: Location[] = [
     x: 37.6,
     y: 35.6,
     info: "文德港墘生活圈擁有書香氣息濃厚的市容、升學率優良的滿額名校、水景公園。生活機能則有文德市場、 737巷、江南街美食生活圈",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "fXOMJw7RlHA",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-6文德港墘生活圈.jpg",
       description:
         "市容書香氣息濃厚、麗山為升學率優良的滿額名校，碧湖公園也是台北市唯二有大湖泊的水景公園。生活機能則有文德市場、 737巷、江南街美食生活圈",
     },
@@ -60,10 +62,11 @@ const locations: Location[] = [
     x: 52.15,
     y: 21.15,
     info: "內湖捷運站生活發展最為成熟。捷運、綠帶環境、親山步道應有盡有。超過57年歷史的湖光市場與內湖唯一百貨Citylink",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "0-rncJ5gmFU",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-01內湖捷運.jpg",
       description:
         "生活發展最為成熟。捷運、綠帶環境、親山步道應有盡有。超過57年歷史的湖光市場與內湖唯一百貨Citylink",
     },
@@ -74,10 +77,11 @@ const locations: Location[] = [
     x: 64.15,
     y: 12.1,
     info: "大湖公園最有名的就是它豐富的自然生態，錦帶橋、落雨松、白鷺鷥、蓮花池、大溝溪親水步道等等。錦帶橋曾被票選為全球最美仙景橋之一",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "shA76n4eOlY",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-2大湖公園.jpg",
       description:
         "大湖公園最有名的就是它豐富的自然生態，錦帶橋、落雨松、白鷺鷥、蓮花池、大溝溪親水步道等等。錦帶橋曾被票選為全球最美仙景橋之一",
     },
@@ -88,10 +92,11 @@ const locations: Location[] = [
     x: 88.25,
     y: 30.3,
     info: "生活機能仰賴公車與汽機車，尚無捷運線規劃。有內溝山步道與柿子山、七星生態花園、五分生態濕地。娛樂則有高爾夫、漆彈樂園..",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "jw0cBxjeReA",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-10第八期重劃區.jpg",
       description:
         "生活機能仰賴公車與汽機車，尚無捷運線規劃。有內溝山步道與柿子山、七星生態花園、五分生態濕地。娛樂則有高爾夫、漆彈樂園..",
     },
@@ -102,10 +107,11 @@ const locations: Location[] = [
     x: 27.85,
     y: 47.4,
     info: "在科技園區裡面 只有少數的純住宅，個別分布在瑞光路與陽光街的門牌中。環境給人濃濃的科技感與AI智慧為鄰。",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "H9Irf4UVJng",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-11內湖科學園區.jpg",
       description:
         "在科技園區裡面 只有少數的純住宅，個別分布在瑞光路與陽光街的門牌中。環境給人濃濃的科技感與AI智慧為鄰。",
     },
@@ -116,10 +122,11 @@ const locations: Location[] = [
     x: 75.8,
     y: 40.4,
     info: "單價因為有南湖、明湖雙明星學區加持所以保值性高。生活機能則有哈拉影城 捷運 康寧醫院 各大銀行。市容給人幽靜又不失機能的感覺",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "3oFkqlP9siY",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-03葫洲第二期重劃區.jpg",
       description:
         "單價因為有南湖、明湖雙明星學區加持所以保值性高。生活機能則有哈拉影城 捷運 康寧醫院 各大銀行。市容給人幽靜又不失機能的感覺",
     },
@@ -130,10 +137,11 @@ const locations: Location[] = [
     x: 87.44,
     y: 50.5,
     info: "生活機能則有哈拉影城 五分市場 東湖路113巷美食街，與南港僅一橋之隔也能吃到該區未來利多。像是威秀、微風、lalaport百貨..等",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "0vC2y9A9KpY",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-05東湖第一期重劃區.jpg",
       description:
         "生活機能則有哈拉影城 五分市場 東湖路113巷美食街，與南港僅一橋之隔也能吃到該區未來利多。像是威秀、微風、lalaport百貨..等",
     },
@@ -144,10 +152,11 @@ const locations: Location[] = [
     x: 35.3,
     y: 73.7,
     info: "五期為美式生活圈，周邊有COSTCO好市多、大潤發、特力屋及家樂福大賣場與大內科計畫2.0相鄰，台塑、緯創BOT、萬海航運、星宇航空..等利多。",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "DGdAp-KuNdY",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-09第五期重劃區.jpg",
       description:
         "五期為美式生活圈，周邊有COSTCO好市多、大潤發、特力屋及家樂福大賣場與大內科計畫2.0相鄰，台塑、緯創BOT、萬海航運、星宇航空..等利多。",
     },
@@ -158,10 +167,11 @@ const locations: Location[] = [
     x: 53.7,
     y: 60.4,
     info: "第四期重劃區為靠近科學園區與三軍總醫院的行政中心區塊，民權東路六段往民權大橋可直達松山機場。交通則仰賴公車、汽機車、未來民生汐止雙軌捷運線還需15年以上的時程。",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "tigl-bB9MxQ",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-8第四期重劃區.jpg",
       description:
         "第四期重劃區為靠近科學園區與三軍總醫院的行政中心區塊，民權東路六段往民權大橋可直達松山機場。交通則仰賴公車、汽機車、未來民生汐止雙軌捷運線還需15年以上的時程。",
     },
@@ -172,10 +182,11 @@ const locations: Location[] = [
     x: 69.3,
     y: 57.6,
     info: "單價因為有南湖、明湖雙明星學區加持所以保值性高。生活機能則有哈拉影城 捷運 康寧醫院 各大銀行。市容給人幽靜又不失機能的感覺",
-    videoId: "dQw4w9WgXcQ",
+    videoId: "3oFkqlP9siY",
     content: {
       videoUrl: "/videos/placeholder.mp4",
-      imageUrl: "/images/placeholder.jpg",
+      imageUrl:
+        "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/10/手機個別區域-04葫洲第三期重劃區.jpg",
       description:
         "單價因為有南湖、明湖雙明星學區加持所以保值性高。生活機能則有哈拉影城 捷運 康寧醫院 各大銀行。市容給人幽靜又不失機能的感覺",
     },
@@ -192,22 +203,24 @@ const LocationContentCard: React.FC<{ location: Location }> = ({
       <div className="new-landing w-full aspect-video bg-gray-100 rounded-sm overflow-hidden relative">
         <div className="new-landing absolute inset-0 flex items-center justify-center bg-navy/5">
           <span className="new-landing text-muted text-xs tracking-widest">
-            影片預留位置
+            {/* 影片預留位置 */}
           </span>
         </div>
-        <video
-          src={location.content.videoUrl}
+        {/* Embed YouTube video */}
+        <iframe
+          src={`https://www.youtube.com/embed/${location.videoId} `}
           className="new-landing relative w-full h-full object-cover"
-          controls
-          playsInline
-        />
+          title={location.label}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
 
       {/* Image placeholder */}
       <div className="new-landing w-full aspect-video bg-cream rounded-sm overflow-hidden relative">
         <div className="new-landing absolute inset-0 flex items-center justify-center">
           <span className="new-landing text-muted text-xs tracking-widest">
-            區域照片預留位置
+            {/* 區域照片預留位置 */}
           </span>
         </div>
         <img
@@ -310,10 +323,16 @@ export const RegionGuideSectionGold: React.FC = () => {
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
                 style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
-                className={`absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-colors duration-200 ${
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white text-xs font-bold transition-all duration-200 hover:scale-110 ${
                   selectedId === loc.id ? "bg-navy" : "bg-gold"
                 }`}
               >
+                {selectedId !== loc.id && (
+                  <div
+                    className="absolute rounded-full bg-gold/30 animate-ping opacity-40"
+                    style={{ inset: "10%", animationDuration: "2.5s" }}
+                  />
+                )}
                 {loc.id}
               </button>
             ))}
@@ -325,7 +344,7 @@ export const RegionGuideSectionGold: React.FC = () => {
               <button
                 key={loc.id}
                 onClick={() => handleDotClick(loc.id, false)}
-                className={`px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-colors text-left ${
+                className={`px-2 py-2 flex items-center gap-3 text-xs font-bold tracking-widest border transition-all text-left hover:scale-[1.02] ${
                   selectedId === loc.id
                     ? "bg-navy text-white border-navy"
                     : "bg-white text-navy border-gold/30 hover:border-navy hover:bg-navy/5"
@@ -369,7 +388,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                     ).matches;
                     handleDotClick(loc.id, isDesktop);
                   }}
-                  className="new-landing absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all"
+                  className="new-landing absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all hover:scale-125"
                   style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                 >
                   <div
@@ -382,14 +401,19 @@ export const RegionGuideSectionGold: React.FC = () => {
                     {loc.label}
                   </div>
                   <div className="new-landing relative w-17 h-17">
-                    {/* Ping / ripple effect */}
-                    {selectedId === loc.id && (
-                      <div className="new-landing absolute inset-0 w-17 h-17 rounded-full bg-gold/40 animate-ping opacity-75"></div>
+                    {/* Ping / ripple effect — active: full size, fast; inactive: smaller, slower */}
+                    {selectedId === loc.id ? (
+                      <div className="new-landing absolute inset-0 rounded-full bg-gold/70 animate-ping opacity-75"></div>
+                    ) : (
+                      <div
+                        className="new-landing absolute inset-0 rounded-full bg-gold/40 animate-ping opacity-40"
+                        style={{ animationDuration: "2.5s" }}
+                      />
                     )}
                     <div
                       className={`relative w-full h-full rounded-full border-2 md:border-4 border-white shadow-lg transition-transform duration-300 ${
                         selectedId === loc.id
-                          ? "bg-navy scale-110"
+                          ? "bg-navy scale-120"
                           : "bg-gold hover:bg-white hover:scale-110"
                       }`}
                     ></div>
@@ -407,7 +431,7 @@ export const RegionGuideSectionGold: React.FC = () => {
             <div
               className={`bg-white border-t-0 border-navy shadow-xl hidden lg:flex flex-col overflow-hidden transition-all duration-500 ease-in-out ${
                 selectedId !== null
-                  ? "w-[400px] opacity-100 p-6"
+                  ? "w-[520px] opacity-100 p-6"
                   : "w-0 opacity-0 p-0"
               }`}
             >
@@ -434,7 +458,7 @@ export const RegionGuideSectionGold: React.FC = () => {
                 </div>
               ) : (
                 <div className="new-landing flex items-center justify-center h-40 text-muted text-sm tracking-widest">
-                  請選擇一個生活圈
+                  {/* 請選擇一個生活圈 */}
                 </div>
               )}
             </div>

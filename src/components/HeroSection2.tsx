@@ -30,7 +30,9 @@ export const HeroSection2: React.FC = () => {
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrcs={[
-            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/忠泰恆美.jpg",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/629317310_122161097768716733_4558949553130919170_n.jpg",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/songshan-minshengyanga-buyerdeal-101-2.png",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/516874619_122138737058716733_64206572609991295_n-e1774571806431.jpg",
           ]}
           slideFrom="bottom"
           className="new-landing relative w-[14vw] h-[75%] max-w-[320px] mb-12 hidden lg:flex"
@@ -59,17 +61,18 @@ export const HeroSection2: React.FC = () => {
         <ParallelogramBlock
           imgSrcs={[
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/nangang-musongu-ceiling-effect-2.png",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/忠泰恆美.jpg",
           ]}
           slideFrom="top"
-          bgColor="bg-navy/40"
+          bgColor="bg-navy/20"
           className="new-landing relative w-[16vw] h-[80%] mb-15 ml-2 hidden lg:flex"
         />
       </div>
 
       {/* 3. Foreground Content */}
-      <div className="new-landing relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-7xl mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
+      <div className="new-landing relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-[1320px] mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 pb-32 pl-4 md:pl-6">
+        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 xl:py-16 pb-32 pl-4 md:pl-6">
           <div className="new-landing mb-6 animate-fade-in-up">
             <h3 className="new-landing text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -101,53 +104,65 @@ export const HeroSection2: React.FC = () => {
           </div>
 
           {/* CTA & Contact Section */}
-          <div className="new-landing flex flex-col lg:flex-row items-start lg:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
-            {/* Call to Action Button */}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://line.me/ti/p/nW4QI48Udq"
-              className="new-landing bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer"
-            >
-              立即預約
-              <svg
-                className="new-landing w-4 h-4 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          <div className="new-landing flex flex-row gap-5">
+            <div className="new-landing flex flex-col lg:flex-col xl:flex-col items-start lg:items-center gap-6 animate-fade-in-up delay-300 relative z-40">
+              {/* Call to Action Button */}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://line.me/ti/p/nW4QI48Udq"
+                className="new-landing bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </a>
-
-            {/* Phone Number */}
-            <div className="new-landing flex items-center gap-3 text-navy">
-              <div className="new-landing w-6 md:w-10 h-6 md:h-10 rounded-full border-0 md:border border-navy flex items-center justify-center">
+                立即預約
                 <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
+                  className="new-landing w-4 h-4 group-hover:translate-x-1 transition-transform"
                   fill="none"
+                  viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
                 </svg>
+              </a>
+
+              {/* Phone Number */}
+              <div className="new-landing flex items-center gap-3 text-navy">
+                <div className="new-landing w-6 md:w-10 h-6 md:h-10 rounded-full border-0 md:border border-navy flex items-center justify-center">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <span className="new-landing font-en-sans font-bold text-lg tracking-wider">
+                  0987-817-916
+                </span>
               </div>
-              <span className="new-landing font-en-sans font-bold text-lg tracking-wider">
-                0987-817-916
-              </span>
+            </div>
+
+            {/* QR code */}
+            <div className="new-landing flex items-start hidden lg:flex">
+              {/* <h5>掃描LINE ID加入好友</h5> */}
+              <img
+                src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/LINEID2.png"
+                alt="QR code"
+                className="new-landing w-32 h-32"
+              />
             </div>
           </div>
 
-          <div className="new-landing mt-8 animate-fade-in-up delay-200">
+          <div className="new-landing mt-8 lg:mt-12 animate-fade-in-up delay-200">
             <p className="new-landing text-gold font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
               Your Vision. Our Expertise.
             </p>

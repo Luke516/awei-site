@@ -6,11 +6,15 @@ export const NavBar: React.FC = () => {
       <div className="new-landing max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="new-landing flex-shrink-0">
-          <a href="#" className="new-landing block md:hidden lg:block">
+          <a
+            href="#"
+            className="relative xl:absolute xl:top-4 new-landing block md:hidden lg:block"
+          >
             <img
-              src="/images/logo.png"
+              // src="/images/logo.png"
+              src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/04/-27-e1713322381335.png"
               alt="黃阿偉 Logo"
-              className="new-landing h-16 w-auto drop-shadow-md block md:block"
+              className="new-landing h-16 xl:h-[15vh] xl:min-h-24 xl:max-h-[140px] w-auto drop-shadow-md block md:block"
             />
           </a>
         </div>
