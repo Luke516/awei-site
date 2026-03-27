@@ -35,8 +35,9 @@ export const ServicesSection: React.FC = () => {
         href: "https://www.0987817916.tw/category/%e8%b2%b7%e6%96%b9%e6%88%90%e4%ba%a4%e6%a1%88%e4%be%8b/",
       },
       secondaryAction: {
-        label: "了解內湖生活圈",
-        href: "/#neihu-guide",
+        label: "內湖導覽",
+        // href: "/#neihu-guide",
+        href: "https://www.0987817916.tw/neihu-video/",
       },
     },
     {

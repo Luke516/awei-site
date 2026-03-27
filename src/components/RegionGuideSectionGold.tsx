@@ -285,7 +285,10 @@ export const RegionGuideSectionGold: React.FC = () => {
   };
 
   return (
-    <section className="new-landing pt-20 bg-cream relative overflow-hidden shadow-lg">
+    <section
+      id="#neihu-guide"
+      className="new-landing pt-20 bg-cream relative overflow-hidden shadow-lg"
+    >
       {/* Grid pattern background */}
       <GridPattern
         width={48}
@@ -538,9 +541,14 @@ export const RegionGuideSectionGold: React.FC = () => {
                 <br />
                 因為我們內湖有的優點，別的地段可不一定會有~
               </p>
-              <button className="new-landing bg-gold border border-navy text-navy font-bold text-sm tracking-widest px-8 py-3 transition-colors">
+              <a
+                href="https://www.0987817916.tw/neihu-video/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="new-landing bg-gold border border-navy text-navy font-bold text-sm tracking-widest px-8 py-3 transition-colors"
+              >
                 觀看更多影片
-              </button>
+              </a>
             </div>
           </div>
         </div>
