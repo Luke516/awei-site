@@ -99,7 +99,7 @@ export const HeroSection2: React.FC = () => {
       {/* 3. Foreground Content */}
       <div className="new-landing relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-[1320px] mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 xl:pt-12 pb-32 pl-4 md:pl-6">
+        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 xl:pt-12 pb-24 md:pb-32 pl-4 md:pl-6">
           <div className="new-landing mb-6 animate-fade-in-up">
             <h3 className="new-landing text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -203,9 +203,12 @@ export const HeroSection2: React.FC = () => {
             </div>
           </div>
 
-          <div className="new-landing mt-8 xl:mt-12 animate-fade-in-up delay-200">
-            <p className="new-landing text-gold font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
-              Your Vision. Our Expertise.
+          <div className="new-landing mt-8 xl:mt-12 animate-fade-in-up delay-200 flex flex-col md:flex-row gap-2  mb-6">
+            <p className="new-landing text-gold font-en-serif italic tracking-widest text-sm md:text-lg">
+              Your Vision.
+            </p>
+            <p className="new-landing text-gold font-en-serif italic tracking-widest text-sm md:text-lg">
+              Our Expertise.
             </p>
           </div>
         </div>
@@ -227,11 +230,11 @@ export const HeroSection2: React.FC = () => {
       <div className="new-landing absolute bottom-0 left-0 w-full z-50">
         {/* User's custom skewed info box */}
         <div
-          className="new-landing absolute bottom-8 min-h-15 left-[-5%] w-[400px] md:w-[480px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-end px-6 lg:px-12 gap-4 py-3"
+          className="new-landing absolute bottom-2 md:bottom-8 min-h-15 left-[-5%] w-[400px] md:w-[500px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-center px-6 lg:px-12 gap-2 md:gap-4 py-3"
           style={{ transform: "skewX(30deg)" }}
         >
           <div
-            className="new-landing text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-4"
+            className="new-landing text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-2 md:pr-4"
             style={{ transform: "skewX(-30deg)" }}
           >
             專營項目
@@ -245,10 +248,8 @@ export const HeroSection2: React.FC = () => {
         </div>
 
         {/* The thin bottom bar */}
-        <div className="new-landing w-full h-8 bg-navy flex items-center justify-end px-6 lg:px-12 relative z-50">
-          <div className="new-landing text-gold font-sans-tc font-medium tracking-[0.2em] text-sm md:text-base hidden">
-            專營：店面 / 商辦 / 豪宅 / 廠房
-          </div>
+        <div className="new-landing w-ful h-2 md:h-8 bg-navy flex items-center justify-end px-6 lg:px-12 relative z-50">
+          <div className="new-landing text-gold font-sans-tc font-medium tracking-[0.2em] text-sm md:text-base hidden"></div>
         </div>
       </div>
     </section>

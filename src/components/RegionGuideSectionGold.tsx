@@ -208,7 +208,7 @@ const LocationContentCard: React.FC<{ location: Location }> = ({
         </div>
         {/* Embed YouTube video */}
         <iframe
-          src={`https://www.youtube.com/embed/${location.videoId} `}
+          src={`https://www.youtube.com/embed/${location.videoId}`}
           className="new-landing relative w-full h-full object-cover"
           title={location.label}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
