@@ -88,7 +88,7 @@ export const HeroSection2: React.FC = () => {
         <ParallelogramBlock
           imgSrcs={[
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/nangang-musongu-ceiling-effect-2.png",
-            // "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/忠泰恆美.jpg",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/忠泰恆美.jpg",
           ]}
           slideFrom="top"
           bgColor="bg-navy/20"
