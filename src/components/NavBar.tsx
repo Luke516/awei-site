@@ -14,7 +14,7 @@ export const NavBar: React.FC = () => {
               // src="/images/logo.png"
               src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2024/04/-27-e1713322381335.png"
               alt="黃阿偉 Logo"
-              className="new-landing h-16 xl:h-[15vh] xl:min-h-24 xl:max-h-[140px] w-auto drop-shadow-md block md:block"
+              className="new-landing h-16 xl:h-[11vh] xl:min-h-20 xl:max-h-[160px] w-auto drop-shadow-md block md:block"
             />
           </a>
         </div>
