@@ -5,6 +5,8 @@ interface ParallelogramBlockProps {
   imgSrc?: string;
   /** Optional list of background image URLs for a slideshow */
   imgSrcs?: string[];
+  /** Optional list of image texts for a slideshow */
+  imageTexts?: React.ReactNode[];
   /** Direction to slide from when entering */
   slideFrom?: "top" | "bottom";
   /** Background color if no image is provided */
@@ -18,6 +20,7 @@ interface ParallelogramBlockProps {
 export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
   imgSrc,
   imgSrcs,
+  imageTexts,
   slideFrom,
   bgColor = "bg-cream",
   className = "",
@@ -33,7 +36,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
     if (images.length > 1) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 4000); // Change image every 4 seconds
+      }, 6000); // Change image every 6 seconds
       return () => clearInterval(interval);
     }
   }, [images.length]);
@@ -76,7 +79,7 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
             className="new-landing absolute min-w-[50vw] margin-auto h-full object-cover transition-opacity duration-1500 ease-in-out"
             style={{
               transform: "skewX(18deg)",
-              opacity: index === currentIndex ? 0.25 : 0,
+              opacity: index === currentIndex ? 0.3 : 0,
             }}
           />
         ))}
@@ -87,6 +90,18 @@ export const ParallelogramBlock: React.FC<ParallelogramBlockProps> = ({
           style={{ transform: "skewX(18deg)" }}
         >
           {children}
+          {imageTexts &&
+            imageTexts.map((text, index) => (
+              <div
+                key={index}
+                className="new-landing absolute top-2 w-full h-full"
+                style={{
+                  opacity: index === currentIndex ? 0.9 : 0,
+                }}
+              >
+                {text}
+              </div>
+            ))}
         </div>
       </div>
     </div>

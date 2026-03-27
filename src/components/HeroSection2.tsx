@@ -34,9 +34,35 @@ export const HeroSection2: React.FC = () => {
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/songshan-minshengyanga-buyerdeal-101-2.png",
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/516874619_122138737058716733_64206572609991295_n-e1774571806431.jpg",
           ]}
+          imageTexts={[
+            <div className="new-landing absolute top-2 left-[1%] hidden md:block w-full flex flex-col items-start justify-start">
+              {/* <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
+                熱心公益
+              </p>
+              <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md pr-3">
+                回饋社區
+              </p> */}
+            </div>,
+            <div className="new-landing absolute top-2 left-[1%] hidden md:block w-full flex flex-col items-start justify-start">
+              {/* <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
+                專業服務
+              </p>
+              <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md pr-3">
+                值得信賴
+              </p> */}
+            </div>,
+            <div className="new-landing absolute top-2 left-[1%] hidden md:block w-full flex flex-col items-start justify-start">
+              {/* <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md">
+                專業服務
+              </p>
+              <p className="new-landing text-right text-gold font-en-sans font-bold tracking-[0.4em] text-lg md:text-xl uppercase whitespace-nowrap drop-shadow-md pr-3">
+                熱心公益
+              </p> */}
+            </div>,
+          ]}
           slideFrom="bottom"
           className="new-landing relative w-[14vw] h-[75%] max-w-[320px] mb-12 hidden lg:flex"
-        />
+        ></ParallelogramBlock>
 
         {/* Block 2: Middle Solid Color (Brand Gold) */}
         <ParallelogramBlock
@@ -72,7 +98,7 @@ export const HeroSection2: React.FC = () => {
       {/* 3. Foreground Content */}
       <div className="new-landing relative z-30 w-full max-w-xl md:max-w-4xl lg:max-w-[1320px] mx-auto lg:px-6 flex flex-row items-center justify-between flex-1 md:mt-0">
         {/* Left Column: Text Block */}
-        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 xl:py-16 pb-32 pl-4 md:pl-6">
+        <div className="new-landing flex flex-col text-charcoal w-full md:w-[45%] pt-10 xl:pt-12 pb-32 pl-4 md:pl-6">
           <div className="new-landing mb-6 animate-fade-in-up">
             <h3 className="new-landing text-gold font-en-serif tracking-[0.3em] text-sm md:text-base mb-2">
               R E A L &nbsp; E S T A T E
@@ -97,7 +123,7 @@ export const HeroSection2: React.FC = () => {
             <div className="new-landing absolute -left-6 top-1/2 -translate-y-1/2 w-[2px] h-[80%] bg-gold/50 hidden md:block"></div>
           </div>
 
-          <div className="new-landing mb-8 animate-fade-in-up delay-200 max-w-md hidden lg:block">
+          <div className="new-landing mb-8 animate-fade-in-up delay-200 max-w-md hidden xl:block">
             <p className="new-landing text-navy font-en-serif italic tracking-widest text-sm md:text-lg mb-6">
               深耕內湖多年，掌握最即時的市場脈動與成交行情。不論是買屋還是賣屋，阿偉都能為您提供最專業的在地分析，讓您的決策更有保障。
             </p>
