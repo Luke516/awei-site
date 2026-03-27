@@ -304,7 +304,7 @@ export const RegionGuideSectionGold: React.FC = () => {
           <SectionHeader
             eyebrow="REGION GUIDE"
             title="內湖生活圈導覽"
-            subtitle="深入了解各區特色，找到最適合您的生活樣貌"
+            subtitle="點擊生活圈，讓阿偉在影片中帶你實地遊走"
             centered={true}
             theme="light"
           />
