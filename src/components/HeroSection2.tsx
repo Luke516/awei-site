@@ -230,14 +230,20 @@ export const HeroSection2: React.FC = () => {
       <div className="new-landing absolute bottom-0 left-0 w-full z-50">
         {/* User's custom skewed info box */}
         <div
-          className="new-landing absolute bottom-2 md:bottom-8 min-h-15 left-[-32px] w-[400px] md:w-[500px] lg:left-[-10%] lg:w-[50%] bg-navy flex items-center justify-center md:justify-end px-6 lg:px-12 gap-2 md:gap-4 py-3"
+          className="new-landing absolute bg-navy bottom-4 md:bottom-8 min-h-15 left-[-32px] lg:left-[-10%] min-w-[400px] md:w-[500px] lg:w-[50%] px-6 lg:px-12 gap-3 md:gap-4 py-3 flex items-center justify-center md:justify-end"
           style={{ transform: "skewX(30deg)" }}
         >
           <div
-            className="new-landing text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-2 md:pr-4"
+            className="new-landing hidden md:block text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-3 md:pr-4"
             style={{ transform: "skewX(-30deg)" }}
           >
             專營項目
+          </div>
+          <div
+            className="new-landing block md:hidden text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg border-r-2 border-gold/50 pr-3 md:pr-4"
+            style={{ transform: "skewX(-30deg)" }}
+          >
+            專營
           </div>
           <div
             className="new-landing text-gold font-serif-tc font-medium tracking-[0.2em] text-sm md:text-lg p-0 m-0"
@@ -248,7 +254,7 @@ export const HeroSection2: React.FC = () => {
         </div>
 
         {/* The thin bottom bar */}
-        <div className="new-landing w-ful h-2 md:h-8 bg-navy flex items-center justify-end px-6 lg:px-12 relative z-50">
+        <div className="new-landing w-ful h-4 md:h-8 bg-navy flex items-center justify-end px-6 lg:px-12 relative z-50">
           <div className="new-landing text-gold font-sans-tc font-medium tracking-[0.2em] text-sm md:text-base hidden"></div>
         </div>
       </div>
