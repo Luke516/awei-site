@@ -26,7 +26,7 @@ export const HeroSection2: React.FC = () => {
       ></div>
 
       {/* 2. Parallelogram Decorative Elements (Right Side Background) */}
-      <div className="new-landing absolute left-[240px] md:left-[10vw] top-0 w-[75vw] lg:w-[88vw] lg:min-w-[1200px] max-w-[2080px] h-full z-10 flex sm:flex flex-row items-end justify-end gap-6">
+      <div className="new-landing absolute left-[240px] md:left-[10vw] top-0 w-[75vw] lg:w-[88vw] lg:min-w-[1080px] max-w-[2080px] h-full z-10 flex sm:flex flex-row items-end justify-end gap-6">
         {/* Block 1: Far right building image */}
         <ParallelogramBlock
           imgSrcs={[
@@ -200,7 +200,7 @@ export const HeroSection2: React.FC = () => {
           <img
             src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/awei-hero-portrait-2.png"
             alt="黃阿偉 Portrait"
-            className="new-landing h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none"
+            className="new-landing h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none mr-0 md:mr-24 lg:mr-20 xl:mr-6"
             style={{
               height: "90%",
             }}
