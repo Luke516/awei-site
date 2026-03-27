@@ -17,7 +17,7 @@ function App() {
         <RegionGuideSectionGold />
         <PostSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
