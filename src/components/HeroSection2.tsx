@@ -32,7 +32,8 @@ export const HeroSection2: React.FC = () => {
           imgSrcs={[
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/629317310_122161097768716733_4558949553130919170_n.jpg",
             "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/songshan-minshengyanga-buyerdeal-101-2.png",
-            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/516874619_122138737058716733_64206572609991295_n-e1774571806431.jpg",
+            // "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/516874619_122138737058716733_64206572609991295_n-e1774571806431.jpg",
+            "https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/帶看房子-e1774576269129.jpg",
           ]}
           imageTexts={[
             <div className="new-landing absolute top-2 left-[1%] hidden md:block w-full flex flex-col items-start justify-start">
