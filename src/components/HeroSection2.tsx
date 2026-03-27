@@ -113,7 +113,7 @@ export const HeroSection2: React.FC = () => {
             <h4 className="new-landing text-muted font-en-serif tracking-[0.2em] text-xs md:text-sm mb-3">
               P R O J E C T &nbsp; M A N A G E R
             </h4>
-            <h1 className="new-landing font-serif-tc font-black text-6xl md:text-7xl tracking-widest mb-4 text-navy">
+            <h1 className="new-landing font-serif-tc font-black text-6xl md:text-7xl xl:text-[80px] tracking-widest mb-4 text-navy">
               黃阿偉
             </h1>
             <p className="new-landing text-muted font-sans-tc text-sm md:text-base tracking-widest">
@@ -138,7 +138,7 @@ export const HeroSection2: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://line.me/ti/p/nW4QI48Udq"
-                className="new-landing bg-navy text-white px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer"
+                className="new-landing bg-navy text-white w-full justify-center px-8 py-4 font-sans-tc font-medium tracking-widest hover:bg-navy/90 transition-colors shadow-lg flex items-center gap-2 group cursor-pointer"
               >
                 立即預約
                 <svg
@@ -158,7 +158,7 @@ export const HeroSection2: React.FC = () => {
 
               {/* Phone Number */}
               <div className="new-landing flex items-center gap-3 text-navy">
-                <div className="new-landing w-6 md:w-10 h-6 md:h-10 rounded-full border-0 md:border border-navy flex items-center justify-center">
+                {/* <div className="new-landing w-6 md:w-10 h-6 md:h-10 rounded-full border-0 md:border border-navy flex items-center justify-center">
                   <svg
                     width="16"
                     height="16"
@@ -171,8 +171,22 @@ export const HeroSection2: React.FC = () => {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
+                </div> */}
+                <div className="new-landing w-8 md:w-12 h-8 md:h-12 rounded-full border-0 md:border border-navy flex items-center justify-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
                 </div>
-                <span className="new-landing font-en-sans font-bold text-lg tracking-wider">
+                <span className="new-landing font-en-sans font-bold text-lg xl:text-[1.5rem] tracking-wider">
                   0987-817-916
                 </span>
               </div>
@@ -184,7 +198,7 @@ export const HeroSection2: React.FC = () => {
               <img
                 src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/LINEID2.png"
                 alt="QR code"
-                className="new-landing w-32 h-32"
+                className="new-landing w-32 h-32 xl:w-36 xl:h-36"
               />
             </div>
           </div>
