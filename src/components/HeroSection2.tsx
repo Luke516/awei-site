@@ -196,11 +196,11 @@ export const HeroSection2: React.FC = () => {
         </div>
 
         {/* Right Column: Portrait */}
-        <div className="new-landing absolute right-0 md:right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-w-[50vw] max-h-[500px] md:max-h-[900px] flex items-end justify-end z-40 animate-fade-in-up delay-400">
+        <div className="new-landing absolute right-0 md:right-[5%] bottom-0 w-full md:w-[45%] h-[85%] md:h-[95%] max-w-[50vw] max-h-[500px] md:max-h-[1100px] flex items-end justify-end z-40 animate-fade-in-up delay-400">
           <img
             src="https://twa0987817916916.admin.metabiz.tw/storage/twa0987817916916/2026/03/awei-hero-portrait-2.png"
             alt="黃阿偉 Portrait"
-            className="new-landing h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none mr-0 md:mr-24 lg:mr-20 xl:mr-6"
+            className="new-landing h-[90%] object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] pointer-events-none mr-0 md:mr-24 lg:mr-20 xl:mr-0"
             style={{
               height: "90%",
             }}
